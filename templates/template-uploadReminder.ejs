@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title><%= subject %></title>
+</head>
+<body style="font-family: Arial, sans-serif; line-height: 1.6; color: #333; max-width: 600px; margin: 0 auto; padding: 20px;">
+
+    <div style="text-align: center; margin-bottom: 24px;">
+        <h2 style="color: #1c3260; margin-bottom: 4px;"><%= subject %></h2>
+    </div>
+
+    <div style="white-space: pre-line;"><%- body %></div>
+
+    <% if (typeof uploadUrl !== 'undefined' && uploadUrl) { %>
+    <div style="text-align: center; margin-top: 32px; margin-bottom: 16px;">
+        <a href="<%= uploadUrl %>" style="background-color: #1c3260; color: #ffffff; padding: 12px 24px; text-decoration: none; border-radius: 4px; font-weight: bold; display: inline-block;">
+            Upload Files Now
+        </a>
+    </div>
+    <% } %>
+
+    <div style="text-align: center; margin-top: 32px;">
+        <p style="font-size: 12px; color: #999;">
+            If you've already completed your upload, please ignore this email.
+        </p>
+    </div>
+</body>
+</html>
