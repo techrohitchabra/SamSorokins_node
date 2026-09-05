@@ -1,0 +1,72 @@
+2026-09-05T15:01:21.912Z [INFO]  - Server is running on http://localhost:8000
+2026-09-05T15:01:26.220Z [INFO]  - Database connected....
+2026-09-05T15:01:26.589Z [INFO]  - ✅ Default admin already exists
+2026-09-05T15:03:51.275Z [INFO]  - Server is running on http://localhost:8000
+2026-09-05T15:03:55.600Z [INFO]  - Database connected....
+2026-09-05T15:03:55.971Z [INFO]  - ✅ Default admin already exists
+2026-09-05T15:10:37.253Z [INFO]  - Server is running on http://localhost:8000
+2026-09-05T15:10:41.593Z [INFO]  - Database connected....
+2026-09-05T15:10:41.962Z [INFO]  - ✅ Default admin already exists
+2026-09-05T15:15:26.708Z [INFO]  - Server is running on http://localhost:8000
+2026-09-05T15:15:30.852Z [INFO]  - Database connected....
+2026-09-05T15:15:31.223Z [INFO]  - ✅ Default admin already exists
+2026-09-05T15:16:12.461Z [INFO]  - Server is running on http://localhost:8000
+2026-09-05T15:16:16.286Z [INFO]  - Database connected....
+2026-09-05T15:16:16.644Z [INFO]  - ✅ Default admin already exists
+2026-09-05T15:30:00.037Z [INFO]  - [UploadReminder] Cron triggered at: 2026-09-05T15:30:00.037Z
+2026-09-05T15:30:00.042Z [INFO]  - [UploadReminder] Running multi-stage reminder check at 2026-09-05T15:30:00.041Z
+2026-09-05T15:30:00.529Z [INFO]  - [UploadReminder] Stage 1: 0 candidate submissions to evaluate.
+2026-09-05T15:30:29.471Z [INFO]  - [UploadReminder] Stage 2: 1589 candidate submissions to evaluate for multi-stage reminders.
+2026-09-05T15:33:13.744Z [INFO]  - Email sent successfully: {
+  accepted: [ 'testrohit1993@gmail.com' ],
+  rejected: [],
+  ehlo: [
+    'SIZE 157286400',
+    'PIPELINING',
+    'DSN',
+    'ENHANCEDSTATUSCODES',
+    'AUTH LOGIN XOAUTH2',
+    '8BITMIME',
+    'BINARYMIME',
+    'CHUNKING',
+    'SMTPUTF8'
+  ],
+  envelopeTime: 867,
+  messageTime: 460,
+  messageSize: 3516,
+  response: '250 2.0.0 OK <f9d9be0d-58a2-dd48-fa4c-29822f1f1882@premiumpd.com> [Hostname=DS4PR11MB292408.namprd11.prod.outlook.com]',
+  envelope: { from: 'info@premiumpd.com', to: [ 'testrohit1993@gmail.com' ] },
+  messageId: '<f9d9be0d-58a2-dd48-fa4c-29822f1f1882@premiumpd.com>'
+}
+2026-09-05T15:35:43.624Z [INFO]  - Server is running on http://localhost:8000
+2026-09-05T15:35:47.582Z [INFO]  - Database connected....
+2026-09-05T15:35:47.939Z [INFO]  - ✅ Default admin already exists
+2026-09-05T15:36:05.536Z [INFO]  - Email sent successfully: {
+  accepted: [ 'testrohit1993@gmail.com' ],
+  rejected: [],
+  ehlo: [
+    'SIZE 157286400',
+    'PIPELINING',
+    'DSN',
+    'ENHANCEDSTATUSCODES',
+    'AUTH LOGIN XOAUTH2',
+    '8BITMIME',
+    'BINARYMIME',
+    'CHUNKING',
+    'SMTPUTF8'
+  ],
+  envelopeTime: 949,
+  messageTime: 539,
+  messageSize: 3524,
+  response: '250 2.0.0 OK <57b6276a-195e-d99f-df7a-f953e929c26d@premiumpd.com> [Hostname=DS4PR11MB292408.namprd11.prod.outlook.com]',
+  envelope: { from: 'info@premiumpd.com', to: [ 'testrohit1993@gmail.com' ] },
+  messageId: '<57b6276a-195e-d99f-df7a-f953e929c26d@premiumpd.com>'
+}
+2026-09-05T16:00:00.142Z [INFO]  - [UploadCleanup] Running 72-hour cleanup job at 2026-09-05T16:00:00.141Z
+2026-09-05T16:00:00.256Z [INFO]  - [UploadReminder] Running multi-stage reminder check at 2026-09-05T16:00:00.254Z
+2026-09-05T16:00:00.231Z [INFO]  - [UploadReminder] Cron triggered at: 2026-09-05T16:00:00.230Z
+2026-09-05T16:00:00.287Z [INFO]  - [AutoMarkSubmitted] Running auto-mark submitted check at 2026-09-05T16:00:00.287Z
+2026-09-05T16:00:00.630Z [INFO]  - [UploadCleanup] No expired uploads found.
+2026-09-05T16:00:00.655Z [INFO]  - [UploadReminder] Stage 1: 0 candidate submissions to evaluate.
+2026-09-05T16:00:01.630Z [INFO]  - [AutoMarkSubmitted] No uploads older than 1 hour found for unsubmitted submissions.
+2026-09-05T16:00:28.747Z [INFO]  - [UploadReminder] Stage 2: 1589 candidate submissions to evaluate for multi-stage reminders.
