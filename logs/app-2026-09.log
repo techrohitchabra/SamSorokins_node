@@ -70,3 +70,412 @@
 2026-09-05T16:00:00.655Z [INFO]  - [UploadReminder] Stage 1: 0 candidate submissions to evaluate.
 2026-09-05T16:00:01.630Z [INFO]  - [AutoMarkSubmitted] No uploads older than 1 hour found for unsubmitted submissions.
 2026-09-05T16:00:28.747Z [INFO]  - [UploadReminder] Stage 2: 1589 candidate submissions to evaluate for multi-stage reminders.
+2026-09-05T16:16:33.951Z [INFO]  - Server is running on http://localhost:8000
+2026-09-05T16:16:38.550Z [INFO]  - Database connected....
+2026-09-05T16:16:39.552Z [INFO]  - ✅ Default admin already exists
+2026-09-05T16:30:00.040Z [INFO]  - [UploadReminder] Cron triggered at: 2026-09-05T16:30:00.040Z
+2026-09-05T16:30:00.046Z [INFO]  - [UploadReminder] Running multi-stage reminder check at 2026-09-05T16:30:00.046Z
+2026-09-05T16:30:00.378Z [INFO]  - [UploadReminder] Stage 1: 0 candidate submissions to evaluate.
+2026-09-05T16:30:58.596Z [INFO]  - [UploadReminder] Stage 2: 1589 candidate submissions to evaluate for multi-stage reminders.
+2026-09-05T16:49:29.403Z [INFO]  - [UploadReminder] Stage 4: 0 fully completed submissions to notify.
+2026-09-05T16:49:29.406Z [INFO]  - [UploadReminder] Multi-stage check complete.
+2026-09-05T17:00:00.063Z [INFO]  - [UploadCleanup] Running 72-hour cleanup job at 2026-09-05T17:00:00.063Z
+2026-09-05T17:00:00.067Z [INFO]  - [UploadReminder] Cron triggered at: 2026-09-05T17:00:00.067Z
+2026-09-05T17:00:00.069Z [INFO]  - [UploadReminder] Running multi-stage reminder check at 2026-09-05T17:00:00.069Z
+2026-09-05T17:00:00.076Z [INFO]  - [AutoMarkSubmitted] Running auto-mark submitted check at 2026-09-05T17:00:00.076Z
+2026-09-05T17:00:00.451Z [INFO]  - [UploadReminder] Stage 1: 0 candidate submissions to evaluate.
+2026-09-05T17:00:00.557Z [INFO]  - [UploadCleanup] No expired uploads found.
+2026-09-05T17:00:01.657Z [INFO]  - [AutoMarkSubmitted] No uploads older than 1 hour found for unsubmitted submissions.
+2026-09-05T17:00:45.581Z [INFO]  - [UploadReminder] Stage 2: 1589 candidate submissions to evaluate for multi-stage reminders.
+2026-09-05T17:18:13.165Z [INFO]  - [UploadReminder] Stage 4: 0 fully completed submissions to notify.
+2026-09-05T17:18:13.168Z [INFO]  - [UploadReminder] Multi-stage check complete.
+2026-09-05T17:30:00.039Z [INFO]  - [UploadReminder] Cron triggered at: 2026-09-05T17:30:00.039Z
+2026-09-05T17:30:00.042Z [INFO]  - [UploadReminder] Running multi-stage reminder check at 2026-09-05T17:30:00.041Z
+2026-09-05T17:30:00.416Z [INFO]  - [UploadReminder] Stage 1: 0 candidate submissions to evaluate.
+2026-09-06T17:52:59.197Z [WARN]  - [2026-09-06T17:52:59.197Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Sat Sep 05 2026 23:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-06T17:52:59.209Z [WARN]  - [2026-09-06T17:52:59.209Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Sun Sep 06 2026 00:00:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-06T17:52:59.221Z [WARN]  - [2026-09-06T17:52:59.221Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Sun Sep 06 2026 01:00:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-06T17:52:59.215Z [WARN]  - [2026-09-06T17:52:59.215Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Sun Sep 06 2026 00:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-06T17:52:59.227Z [WARN]  - [2026-09-06T17:52:59.227Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Sun Sep 06 2026 01:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-06T17:52:59.233Z [WARN]  - [2026-09-06T17:52:59.233Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Sun Sep 06 2026 02:00:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-06T17:52:59.316Z [WARN]  - [2026-09-06T17:52:59.316Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Sun Sep 06 2026 03:00:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-06T17:52:59.331Z [WARN]  - [2026-09-06T17:52:59.331Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Sun Sep 06 2026 04:00:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-06T17:52:59.239Z [WARN]  - [2026-09-06T17:52:59.239Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Sun Sep 06 2026 02:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-06T17:53:01.135Z [WARN]  - [2026-09-06T17:53:01.135Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Sun Sep 06 2026 05:00:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-06T17:53:01.142Z [WARN]  - [2026-09-06T17:53:01.142Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Sun Sep 06 2026 05:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-06T17:53:01.147Z [WARN]  - [2026-09-06T17:53:01.147Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Sun Sep 06 2026 06:00:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-06T17:52:59.339Z [WARN]  - [2026-09-06T17:52:59.339Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Sun Sep 06 2026 04:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-06T17:52:59.324Z [WARN]  - [2026-09-06T17:52:59.324Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Sun Sep 06 2026 03:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-06T17:53:01.155Z [WARN]  - [2026-09-06T17:53:01.155Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Sun Sep 06 2026 06:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-06T17:53:01.161Z [WARN]  - [2026-09-06T17:53:01.161Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Sun Sep 06 2026 07:00:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-06T17:53:01.179Z [WARN]  - [2026-09-06T17:53:01.179Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Sun Sep 06 2026 08:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-06T17:53:01.173Z [WARN]  - [2026-09-06T17:53:01.173Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Sun Sep 06 2026 08:00:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-06T17:53:01.167Z [WARN]  - [2026-09-06T17:53:01.167Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Sun Sep 06 2026 07:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-06T17:53:01.185Z [WARN]  - [2026-09-06T17:53:01.185Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Sun Sep 06 2026 09:00:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-06T17:53:01.198Z [WARN]  - [2026-09-06T17:53:01.198Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Sun Sep 06 2026 10:00:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-06T17:53:01.192Z [WARN]  - [2026-09-06T17:53:01.192Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Sun Sep 06 2026 09:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-06T17:53:01.204Z [WARN]  - [2026-09-06T17:53:01.204Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Sun Sep 06 2026 10:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-06T17:53:01.215Z [WARN]  - [2026-09-06T17:53:01.215Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Sun Sep 06 2026 11:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-06T17:53:01.228Z [WARN]  - [2026-09-06T17:53:01.228Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Sun Sep 06 2026 12:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-06T17:53:01.234Z [WARN]  - [2026-09-06T17:53:01.234Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Sun Sep 06 2026 13:00:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-06T17:53:01.241Z [WARN]  - [2026-09-06T17:53:01.241Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Sun Sep 06 2026 13:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-06T17:53:01.246Z [WARN]  - [2026-09-06T17:53:01.246Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Sun Sep 06 2026 14:00:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-06T17:53:01.209Z [WARN]  - [2026-09-06T17:53:01.209Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Sun Sep 06 2026 11:00:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-06T17:53:01.221Z [WARN]  - [2026-09-06T17:53:01.221Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Sun Sep 06 2026 12:00:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-06T17:53:01.261Z [WARN]  - [2026-09-06T17:53:01.261Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Sun Sep 06 2026 15:00:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-06T17:53:01.268Z [WARN]  - [2026-09-06T17:53:01.268Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Sun Sep 06 2026 15:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-06T17:53:01.256Z [WARN]  - [2026-09-06T17:53:01.256Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Sun Sep 06 2026 14:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-06T17:53:01.273Z [WARN]  - [2026-09-06T17:53:01.273Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Sun Sep 06 2026 16:00:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-06T17:53:01.279Z [WARN]  - [2026-09-06T17:53:01.279Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Sun Sep 06 2026 16:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-06T17:53:01.290Z [WARN]  - [2026-09-06T17:53:01.290Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Sun Sep 06 2026 17:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-06T17:53:01.285Z [WARN]  - [2026-09-06T17:53:01.285Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Sun Sep 06 2026 17:00:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-06T17:53:01.303Z [WARN]  - [2026-09-06T17:53:01.303Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Sun Sep 06 2026 18:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-06T17:53:01.308Z [WARN]  - [2026-09-06T17:53:01.308Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Sun Sep 06 2026 19:00:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-06T17:53:01.320Z [WARN]  - [2026-09-06T17:53:01.320Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Sun Sep 06 2026 20:00:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-06T17:53:01.314Z [WARN]  - [2026-09-06T17:53:01.314Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Sun Sep 06 2026 19:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-06T17:53:01.296Z [WARN]  - [2026-09-06T17:53:01.296Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Sun Sep 06 2026 18:00:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-06T17:53:01.330Z [WARN]  - [2026-09-06T17:53:01.330Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Sun Sep 06 2026 21:00:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-06T17:53:01.336Z [WARN]  - [2026-09-06T17:53:01.336Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Sun Sep 06 2026 21:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-06T17:53:01.342Z [WARN]  - [2026-09-06T17:53:01.342Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Sun Sep 06 2026 22:00:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-06T17:53:01.348Z [WARN]  - [2026-09-06T17:53:01.348Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Sun Sep 06 2026 22:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-06T17:53:01.353Z [WARN]  - [2026-09-06T17:53:01.353Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Sun Sep 06 2026 23:00:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-06T17:53:01.369Z [WARN]  - [2026-09-06T17:53:01.369Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Sat Sep 05 2026 23:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-06T17:53:01.325Z [WARN]  - [2026-09-06T17:53:01.325Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Sun Sep 06 2026 20:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-06T17:53:01.381Z [WARN]  - [2026-09-06T17:53:01.381Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Sun Sep 06 2026 01:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-06T17:53:01.375Z [WARN]  - [2026-09-06T17:53:01.375Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Sun Sep 06 2026 00:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-06T17:53:01.396Z [WARN]  - [2026-09-06T17:53:01.396Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Sun Sep 06 2026 03:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-06T17:53:01.408Z [WARN]  - [2026-09-06T17:53:01.408Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Sun Sep 06 2026 05:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-06T17:53:01.402Z [WARN]  - [2026-09-06T17:53:01.402Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Sun Sep 06 2026 04:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-06T17:53:01.390Z [WARN]  - [2026-09-06T17:53:01.390Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Sun Sep 06 2026 02:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-06T17:53:01.426Z [WARN]  - [2026-09-06T17:53:01.426Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Sun Sep 06 2026 08:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-06T17:53:01.420Z [WARN]  - [2026-09-06T17:53:01.420Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Sun Sep 06 2026 07:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-06T17:53:01.432Z [WARN]  - [2026-09-06T17:53:01.432Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Sun Sep 06 2026 09:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-06T17:53:01.438Z [WARN]  - [2026-09-06T17:53:01.438Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Sun Sep 06 2026 10:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-06T17:53:01.414Z [WARN]  - [2026-09-06T17:53:01.414Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Sun Sep 06 2026 06:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-06T17:53:01.453Z [WARN]  - [2026-09-06T17:53:01.453Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Sun Sep 06 2026 12:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-06T17:53:01.444Z [WARN]  - [2026-09-06T17:53:01.444Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Sun Sep 06 2026 11:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-06T17:53:01.460Z [WARN]  - [2026-09-06T17:53:01.460Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Sun Sep 06 2026 13:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-06T17:53:01.472Z [WARN]  - [2026-09-06T17:53:01.472Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Sun Sep 06 2026 15:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-06T17:53:01.465Z [WARN]  - [2026-09-06T17:53:01.465Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Sun Sep 06 2026 14:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-06T17:53:01.486Z [WARN]  - [2026-09-06T17:53:01.486Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Sun Sep 06 2026 17:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-06T17:53:01.478Z [WARN]  - [2026-09-06T17:53:01.478Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Sun Sep 06 2026 16:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-06T17:53:01.503Z [WARN]  - [2026-09-06T17:53:01.503Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Sun Sep 06 2026 19:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-06T17:53:01.495Z [WARN]  - [2026-09-06T17:53:01.495Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Sun Sep 06 2026 18:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-06T17:53:01.516Z [WARN]  - [2026-09-06T17:53:01.516Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Sun Sep 06 2026 21:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-06T17:53:01.539Z [WARN]  - [2026-09-06T17:53:01.539Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Sat Sep 05 2026 23:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-06T17:53:01.549Z [WARN]  - [2026-09-06T17:53:01.549Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Sun Sep 06 2026 00:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-06T17:53:01.556Z [WARN]  - [2026-09-06T17:53:01.556Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Sun Sep 06 2026 01:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-06T17:53:01.563Z [WARN]  - [2026-09-06T17:53:01.563Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Sun Sep 06 2026 02:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-06T17:53:01.522Z [WARN]  - [2026-09-06T17:53:01.522Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Sun Sep 06 2026 22:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-06T17:53:01.570Z [WARN]  - [2026-09-06T17:53:01.570Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Sun Sep 06 2026 03:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-06T17:53:02.282Z [WARN]  - [2026-09-06T17:53:02.282Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Sun Sep 06 2026 04:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-06T17:53:01.509Z [WARN]  - [2026-09-06T17:53:01.509Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Sun Sep 06 2026 20:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-06T17:53:02.290Z [WARN]  - [2026-09-06T17:53:02.290Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Sun Sep 06 2026 05:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-06T17:53:02.302Z [WARN]  - [2026-09-06T17:53:02.302Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Sun Sep 06 2026 07:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-06T17:53:02.296Z [WARN]  - [2026-09-06T17:53:02.296Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Sun Sep 06 2026 06:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-06T17:53:02.309Z [WARN]  - [2026-09-06T17:53:02.309Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Sun Sep 06 2026 08:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-06T17:53:02.315Z [WARN]  - [2026-09-06T17:53:02.315Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Sun Sep 06 2026 09:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-06T17:53:02.321Z [WARN]  - [2026-09-06T17:53:02.321Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Sun Sep 06 2026 10:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-06T17:53:02.346Z [WARN]  - [2026-09-06T17:53:02.346Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Sun Sep 06 2026 12:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-06T17:53:02.353Z [WARN]  - [2026-09-06T17:53:02.353Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Sun Sep 06 2026 13:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-06T17:53:02.328Z [WARN]  - [2026-09-06T17:53:02.328Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Sun Sep 06 2026 11:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-06T17:53:02.358Z [WARN]  - [2026-09-06T17:53:02.358Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Sun Sep 06 2026 14:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-06T17:53:02.364Z [WARN]  - [2026-09-06T17:53:02.364Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Sun Sep 06 2026 15:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-06T17:53:02.372Z [WARN]  - [2026-09-06T17:53:02.371Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Sun Sep 06 2026 16:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-06T17:53:02.384Z [WARN]  - [2026-09-06T17:53:02.384Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Sun Sep 06 2026 18:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-06T17:53:02.378Z [WARN]  - [2026-09-06T17:53:02.378Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Sun Sep 06 2026 17:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-06T17:53:02.396Z [WARN]  - [2026-09-06T17:53:02.396Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Sun Sep 06 2026 20:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-06T17:53:02.390Z [WARN]  - [2026-09-06T17:53:02.390Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Sun Sep 06 2026 19:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-06T17:53:02.411Z [WARN]  - [2026-09-06T17:53:02.411Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Sun Sep 06 2026 22:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-06T17:53:02.402Z [WARN]  - [2026-09-06T17:53:02.402Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Sun Sep 06 2026 21:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-06T18:00:00.128Z [INFO]  - [UploadReminder] Cron triggered at: 2026-09-06T18:00:00.128Z
+2026-09-06T18:00:00.130Z [INFO]  - [UploadReminder] Running multi-stage reminder check at 2026-09-06T18:00:00.130Z
+2026-09-06T18:00:00.135Z [INFO]  - [UploadCleanup] Running 72-hour cleanup job at 2026-09-06T18:00:00.135Z
+2026-09-06T18:00:00.146Z [INFO]  - [AutoMarkSubmitted] Running auto-mark submitted check at 2026-09-06T18:00:00.146Z
+2026-09-06T18:00:00.509Z [INFO]  - [UploadCleanup] No expired uploads found.
+2026-09-06T18:00:00.512Z [INFO]  - [UploadReminder] Stage 1: 0 candidate submissions to evaluate.
+2026-09-06T18:00:01.330Z [INFO]  - [AutoMarkSubmitted] No uploads older than 1 hour found for unsubmitted submissions.
+2026-09-06T18:00:17.000Z [INFO]  - [UploadReminder] Stage 2: 1589 candidate submissions to evaluate for multi-stage reminders.
+2026-09-06T18:30:00.036Z [INFO]  - [UploadReminder] Cron triggered at: 2026-09-06T18:30:00.036Z
+2026-09-06T18:30:00.038Z [INFO]  - [UploadReminder] Running multi-stage reminder check at 2026-09-06T18:30:00.038Z
+2026-09-06T18:30:00.434Z [INFO]  - [UploadReminder] Stage 1: 0 candidate submissions to evaluate.
+2026-09-06T18:30:14.840Z [INFO]  - [UploadReminder] Stage 2: 1589 candidate submissions to evaluate for multi-stage reminders.
+2026-09-06T18:47:22.665Z [INFO]  - [UploadReminder] Stage 4: 0 fully completed submissions to notify.
+2026-09-06T18:47:22.666Z [INFO]  - [UploadReminder] Multi-stage check complete.
+2026-09-06T19:00:00.060Z [INFO]  - [UploadCleanup] Running 72-hour cleanup job at 2026-09-06T19:00:00.059Z
+2026-09-06T19:00:00.066Z [INFO]  - [AutoMarkSubmitted] Running auto-mark submitted check at 2026-09-06T19:00:00.066Z
+2026-09-06T19:00:00.076Z [INFO]  - [UploadReminder] Cron triggered at: 2026-09-06T19:00:00.076Z
+2026-09-06T19:00:00.078Z [INFO]  - [UploadReminder] Running multi-stage reminder check at 2026-09-06T19:00:00.078Z
+2026-09-06T19:00:00.404Z [INFO]  - [UploadCleanup] No expired uploads found.
+2026-09-06T19:00:02.770Z [INFO]  - [UploadReminder] Stage 1: 0 candidate submissions to evaluate.
+2026-09-06T19:00:03.468Z [INFO]  - [AutoMarkSubmitted] No uploads older than 1 hour found for unsubmitted submissions.
+2026-09-06T19:00:28.500Z [INFO]  - [UploadReminder] Stage 2: 1589 candidate submissions to evaluate for multi-stage reminders.
+2026-09-06T19:16:49.597Z [INFO]  - [UploadReminder] Stage 4: 0 fully completed submissions to notify.
+2026-09-06T19:16:49.598Z [INFO]  - [UploadReminder] Multi-stage check complete.
+2026-09-06T19:30:00.028Z [INFO]  - [UploadReminder] Cron triggered at: 2026-09-06T19:30:00.028Z
+2026-09-06T19:30:00.030Z [INFO]  - [UploadReminder] Running multi-stage reminder check at 2026-09-06T19:30:00.030Z
+2026-09-06T19:30:00.700Z [INFO]  - [UploadReminder] Stage 1: 0 candidate submissions to evaluate.
+2026-09-06T19:30:37.265Z [INFO]  - [UploadReminder] Stage 2: 1589 candidate submissions to evaluate for multi-stage reminders.
+2026-09-06T19:48:24.460Z [INFO]  - [UploadReminder] Stage 4: 0 fully completed submissions to notify.
+2026-09-06T19:48:24.461Z [INFO]  - [UploadReminder] Multi-stage check complete.
+2026-09-06T20:00:00.070Z [INFO]  - [UploadReminder] Cron triggered at: 2026-09-06T20:00:00.070Z
+2026-09-06T20:00:00.072Z [INFO]  - [UploadReminder] Running multi-stage reminder check at 2026-09-06T20:00:00.072Z
+2026-09-06T20:00:00.080Z [INFO]  - [UploadCleanup] Running 72-hour cleanup job at 2026-09-06T20:00:00.080Z
+2026-09-06T20:00:00.092Z [INFO]  - [AutoMarkSubmitted] Running auto-mark submitted check at 2026-09-06T20:00:00.092Z
+2026-09-06T20:00:00.413Z [INFO]  - [UploadReminder] Stage 1: 0 candidate submissions to evaluate.
+2026-09-06T20:00:00.410Z [INFO]  - [UploadCleanup] No expired uploads found.
+2026-09-06T20:00:01.318Z [INFO]  - [AutoMarkSubmitted] No uploads older than 1 hour found for unsubmitted submissions.
+2026-09-06T20:00:27.150Z [INFO]  - [UploadReminder] Stage 2: 1589 candidate submissions to evaluate for multi-stage reminders.
+2026-09-06T20:16:37.426Z [INFO]  - [UploadReminder] Stage 4: 0 fully completed submissions to notify.
+2026-09-06T20:16:37.427Z [INFO]  - [UploadReminder] Multi-stage check complete.
+2026-09-07T07:41:20.689Z [WARN]  - [2026-09-07T07:41:20.689Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Mon Sep 07 2026 02:00:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-07T07:41:20.906Z [WARN]  - [2026-09-07T07:41:20.906Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Mon Sep 07 2026 02:00:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-07T07:41:20.955Z [WARN]  - [2026-09-07T07:41:20.955Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Mon Sep 07 2026 02:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-07T07:41:20.988Z [WARN]  - [2026-09-07T07:41:20.988Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Mon Sep 07 2026 03:00:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-07T07:41:21.042Z [WARN]  - [2026-09-07T07:41:21.042Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Mon Sep 07 2026 03:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-07T07:41:21.078Z [WARN]  - [2026-09-07T07:41:21.078Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Mon Sep 07 2026 04:00:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-07T07:41:21.105Z [WARN]  - [2026-09-07T07:41:21.105Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Mon Sep 07 2026 04:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-07T07:41:21.129Z [WARN]  - [2026-09-07T07:41:21.128Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Mon Sep 07 2026 05:00:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-07T07:41:21.166Z [WARN]  - [2026-09-07T07:41:21.166Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Mon Sep 07 2026 05:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-07T07:41:21.201Z [WARN]  - [2026-09-07T07:41:21.201Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Mon Sep 07 2026 06:00:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-07T07:41:21.249Z [WARN]  - [2026-09-07T07:41:21.248Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Mon Sep 07 2026 06:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-07T07:41:21.287Z [WARN]  - [2026-09-07T07:41:21.287Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Mon Sep 07 2026 07:00:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-07T07:41:21.317Z [WARN]  - [2026-09-07T07:41:21.317Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Mon Sep 07 2026 07:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-07T07:41:21.349Z [WARN]  - [2026-09-07T07:41:21.349Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Mon Sep 07 2026 08:00:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-07T07:41:21.428Z [WARN]  - [2026-09-07T07:41:21.428Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Mon Sep 07 2026 08:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-07T07:41:21.940Z [WARN]  - [2026-09-07T07:41:21.940Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Mon Sep 07 2026 09:00:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-07T07:41:22.218Z [WARN]  - [2026-09-07T07:41:22.218Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Mon Sep 07 2026 09:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-07T07:41:22.361Z [WARN]  - [2026-09-07T07:41:22.361Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Mon Sep 07 2026 10:00:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-07T07:41:22.473Z [WARN]  - [2026-09-07T07:41:22.473Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Mon Sep 07 2026 10:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-07T07:41:22.630Z [WARN]  - [2026-09-07T07:41:22.630Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Mon Sep 07 2026 11:00:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-07T07:41:22.703Z [WARN]  - [2026-09-07T07:41:22.703Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Mon Sep 07 2026 11:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-07T07:41:22.826Z [WARN]  - [2026-09-07T07:41:22.826Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Mon Sep 07 2026 12:00:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-07T07:41:22.884Z [WARN]  - [2026-09-07T07:41:22.884Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Mon Sep 07 2026 12:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-07T07:41:23.001Z [WARN]  - [2026-09-07T07:41:23.001Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Mon Sep 07 2026 13:00:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-07T07:41:23.118Z [WARN]  - [2026-09-07T07:41:23.118Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Mon Sep 07 2026 02:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-07T07:41:23.176Z [WARN]  - [2026-09-07T07:41:23.176Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Mon Sep 07 2026 03:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-07T07:41:23.223Z [WARN]  - [2026-09-07T07:41:23.223Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Mon Sep 07 2026 04:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-07T07:41:23.282Z [WARN]  - [2026-09-07T07:41:23.282Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Mon Sep 07 2026 05:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-07T07:41:23.343Z [WARN]  - [2026-09-07T07:41:23.343Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Mon Sep 07 2026 06:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-07T07:41:23.381Z [WARN]  - [2026-09-07T07:41:23.381Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Mon Sep 07 2026 07:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-07T07:41:23.418Z [WARN]  - [2026-09-07T07:41:23.418Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Mon Sep 07 2026 08:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-07T07:41:23.444Z [WARN]  - [2026-09-07T07:41:23.444Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Mon Sep 07 2026 09:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-07T07:41:23.488Z [WARN]  - [2026-09-07T07:41:23.488Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Mon Sep 07 2026 10:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-07T07:41:23.517Z [WARN]  - [2026-09-07T07:41:23.517Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Mon Sep 07 2026 11:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-07T07:41:23.594Z [WARN]  - [2026-09-07T07:41:23.594Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Mon Sep 07 2026 12:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-07T07:41:23.713Z [WARN]  - [2026-09-07T07:41:23.713Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Mon Sep 07 2026 02:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-07T07:41:23.815Z [WARN]  - [2026-09-07T07:41:23.815Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Mon Sep 07 2026 03:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-07T07:41:23.874Z [WARN]  - [2026-09-07T07:41:23.874Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Mon Sep 07 2026 04:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-07T07:41:23.943Z [WARN]  - [2026-09-07T07:41:23.943Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Mon Sep 07 2026 05:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-07T07:41:24.004Z [WARN]  - [2026-09-07T07:41:24.004Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Mon Sep 07 2026 06:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-07T07:41:24.112Z [WARN]  - [2026-09-07T07:41:24.111Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Mon Sep 07 2026 07:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-07T07:41:24.297Z [WARN]  - [2026-09-07T07:41:24.296Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Mon Sep 07 2026 08:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-07T07:41:24.393Z [WARN]  - [2026-09-07T07:41:24.393Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Mon Sep 07 2026 09:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-07T07:41:24.521Z [WARN]  - [2026-09-07T07:41:24.521Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Mon Sep 07 2026 10:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-07T07:41:24.568Z [WARN]  - [2026-09-07T07:41:24.568Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Mon Sep 07 2026 11:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-07T07:41:24.627Z [WARN]  - [2026-09-07T07:41:24.627Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Mon Sep 07 2026 12:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-07T07:41:24.704Z [WARN]  - [2026-09-07T07:41:24.704Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Mon Sep 07 2026 09:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-07T08:00:00.082Z [INFO]  - [UploadReminder] Cron triggered at: 2026-09-07T08:00:00.082Z
+2026-09-07T08:00:00.085Z [INFO]  - [UploadReminder] Running multi-stage reminder check at 2026-09-07T08:00:00.085Z
+2026-09-07T08:00:00.100Z [INFO]  - [UploadCleanup] Running 72-hour cleanup job at 2026-09-07T08:00:00.100Z
+2026-09-07T08:00:00.109Z [INFO]  - [AutoMarkSubmitted] Running auto-mark submitted check at 2026-09-07T08:00:00.109Z
+2026-09-07T08:00:03.602Z [INFO]  - [UploadCleanup] No expired uploads found.
+2026-09-07T08:00:03.734Z [INFO]  - [UploadReminder] Stage 1: 1 candidate submissions to evaluate.
+2026-09-07T08:00:06.339Z [INFO]  - [AutoMarkSubmitted] No uploads older than 1 hour found for unsubmitted submissions.
+2026-09-07T08:01:20.547Z [INFO]  - [UploadReminder] Stage 2: 1590 candidate submissions to evaluate for multi-stage reminders.
+2026-09-07T08:18:33.050Z [INFO]  - [UploadReminder] Stage 4: 0 fully completed submissions to notify.
+2026-09-07T08:18:33.051Z [INFO]  - [UploadReminder] Multi-stage check complete.
+2026-09-07T08:30:00.035Z [INFO]  - [UploadReminder] Cron triggered at: 2026-09-07T08:30:00.035Z
+2026-09-07T08:30:00.037Z [INFO]  - [UploadReminder] Running multi-stage reminder check at 2026-09-07T08:30:00.037Z
+2026-09-07T08:30:03.240Z [INFO]  - [UploadReminder] Stage 1: 1 candidate submissions to evaluate.
+2026-09-07T08:30:27.944Z [INFO]  - [UploadReminder] Stage 2: 1590 candidate submissions to evaluate for multi-stage reminders.
+2026-09-07T08:47:30.915Z [INFO]  - [UploadReminder] Multi-stage check complete.
+2026-09-07T08:47:30.914Z [INFO]  - [UploadReminder] Stage 4: 0 fully completed submissions to notify.
+2026-09-07T09:00:00.062Z [INFO]  - [UploadCleanup] Running 72-hour cleanup job at 2026-09-07T09:00:00.062Z
+2026-09-07T09:00:00.067Z [INFO]  - [UploadReminder] Cron triggered at: 2026-09-07T09:00:00.067Z
+2026-09-07T09:00:00.068Z [INFO]  - [UploadReminder] Running multi-stage reminder check at 2026-09-07T09:00:00.068Z
+2026-09-07T09:00:00.079Z [INFO]  - [AutoMarkSubmitted] Running auto-mark submitted check at 2026-09-07T09:00:00.079Z
+2026-09-07T09:00:00.397Z [INFO]  - [UploadCleanup] No expired uploads found.
+2026-09-07T09:00:03.224Z [INFO]  - [UploadReminder] Stage 1: 1 candidate submissions to evaluate.
+2026-09-07T09:00:03.500Z [INFO]  - [AutoMarkSubmitted] No uploads older than 1 hour found for unsubmitted submissions.
+2026-09-07T09:00:20.401Z [INFO]  - [UploadReminder] Stage 2: 1590 candidate submissions to evaluate for multi-stage reminders.
+2026-09-07T09:17:47.261Z [INFO]  - [UploadReminder] Stage 4: 0 fully completed submissions to notify.
+2026-09-07T09:17:47.262Z [INFO]  - [UploadReminder] Multi-stage check complete.
+2026-09-07T09:30:00.041Z [INFO]  - [UploadReminder] Cron triggered at: 2026-09-07T09:30:00.041Z
+2026-09-07T09:30:00.043Z [INFO]  - [UploadReminder] Running multi-stage reminder check at 2026-09-07T09:30:00.043Z
+2026-09-07T09:30:00.763Z [INFO]  - [UploadReminder] Stage 1: 1 candidate submissions to evaluate.
+2026-09-07T09:30:33.251Z [INFO]  - [UploadReminder] Stage 2: 1590 candidate submissions to evaluate for multi-stage reminders.
+2026-09-07T09:47:37.192Z [INFO]  - [UploadReminder] Stage 4: 0 fully completed submissions to notify.
+2026-09-07T09:47:37.192Z [INFO]  - [UploadReminder] Multi-stage check complete.
+2026-09-07T10:00:00.064Z [INFO]  - [UploadCleanup] Running 72-hour cleanup job at 2026-09-07T10:00:00.064Z
+2026-09-07T10:00:00.078Z [INFO]  - [UploadReminder] Running multi-stage reminder check at 2026-09-07T10:00:00.078Z
+2026-09-07T10:00:00.076Z [INFO]  - [UploadReminder] Cron triggered at: 2026-09-07T10:00:00.074Z
+2026-09-07T10:00:00.069Z [INFO]  - [AutoMarkSubmitted] Running auto-mark submitted check at 2026-09-07T10:00:00.069Z
+2026-09-07T10:00:00.409Z [INFO]  - [UploadCleanup] No expired uploads found.
+2026-09-07T10:00:00.762Z [INFO]  - [UploadReminder] Stage 1: 1 candidate submissions to evaluate.
+2026-09-07T10:00:01.302Z [INFO]  - [AutoMarkSubmitted] No uploads older than 1 hour found for unsubmitted submissions.
+2026-09-07T10:00:35.184Z [INFO]  - [UploadReminder] Stage 2: 1590 candidate submissions to evaluate for multi-stage reminders.
+2026-09-07T10:18:11.516Z [INFO]  - [UploadReminder] Stage 4: 0 fully completed submissions to notify.
+2026-09-07T10:18:11.518Z [INFO]  - [UploadReminder] Multi-stage check complete.
+2026-09-07T10:30:00.076Z [INFO]  - [UploadReminder] Cron triggered at: 2026-09-07T10:30:00.076Z
+2026-09-07T10:30:00.079Z [INFO]  - [UploadReminder] Running multi-stage reminder check at 2026-09-07T10:30:00.079Z
+2026-09-07T10:30:00.852Z [INFO]  - [UploadReminder] Stage 1: 1 candidate submissions to evaluate.
+2026-09-07T10:30:58.343Z [INFO]  - [UploadReminder] Stage 2: 1590 candidate submissions to evaluate for multi-stage reminders.
+2026-09-07T16:55:31.947Z [WARN]  - [2026-09-07T16:55:31.947Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Mon Sep 07 2026 16:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-07T16:55:32.004Z [WARN]  - [2026-09-07T16:55:32.004Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Mon Sep 07 2026 19:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-07T16:55:31.966Z [WARN]  - [2026-09-07T16:55:31.966Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Mon Sep 07 2026 17:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-07T16:55:31.978Z [WARN]  - [2026-09-07T16:55:31.978Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Mon Sep 07 2026 18:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-07T16:55:32.131Z [WARN]  - [2026-09-07T16:55:32.131Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Mon Sep 07 2026 21:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-07T16:55:32.059Z [WARN]  - [2026-09-07T16:55:32.059Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Mon Sep 07 2026 20:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-07T16:55:32.187Z [WARN]  - [2026-09-07T16:55:32.187Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Mon Sep 07 2026 16:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-07T16:55:32.195Z [WARN]  - [2026-09-07T16:55:32.195Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Mon Sep 07 2026 17:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-07T16:55:32.204Z [WARN]  - [2026-09-07T16:55:32.204Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Mon Sep 07 2026 18:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-07T16:55:32.214Z [WARN]  - [2026-09-07T16:55:32.213Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Mon Sep 07 2026 19:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-07T16:55:32.238Z [WARN]  - [2026-09-07T16:55:32.231Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Mon Sep 07 2026 20:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-07T16:55:32.250Z [WARN]  - [2026-09-07T16:55:32.250Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Mon Sep 07 2026 21:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-07T16:55:32.283Z [WARN]  - [2026-09-07T16:55:32.283Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Mon Sep 07 2026 16:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-07T16:55:32.306Z [WARN]  - [2026-09-07T16:55:32.306Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Mon Sep 07 2026 18:00:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-07T16:55:32.291Z [WARN]  - [2026-09-07T16:55:32.291Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Mon Sep 07 2026 17:00:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-07T16:55:32.299Z [WARN]  - [2026-09-07T16:55:32.299Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Mon Sep 07 2026 17:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-07T16:55:32.330Z [WARN]  - [2026-09-07T16:55:32.329Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Mon Sep 07 2026 19:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-07T16:55:32.312Z [WARN]  - [2026-09-07T16:55:32.312Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Mon Sep 07 2026 18:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-07T16:55:32.337Z [WARN]  - [2026-09-07T16:55:32.337Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Mon Sep 07 2026 20:00:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-07T16:55:32.353Z [WARN]  - [2026-09-07T16:55:32.353Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Mon Sep 07 2026 20:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-07T16:55:32.318Z [WARN]  - [2026-09-07T16:55:32.318Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Mon Sep 07 2026 19:00:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-07T16:55:32.388Z [WARN]  - [2026-09-07T16:55:32.388Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Mon Sep 07 2026 22:00:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-07T16:55:32.382Z [WARN]  - [2026-09-07T16:55:32.382Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Mon Sep 07 2026 21:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-07T16:55:32.407Z [WARN]  - [2026-09-07T16:55:32.407Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Mon Sep 07 2026 19:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-07T16:55:32.427Z [WARN]  - [2026-09-07T16:55:32.427Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Mon Sep 07 2026 20:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-07T16:55:32.446Z [WARN]  - [2026-09-07T16:55:32.446Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Mon Sep 07 2026 20:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-07T16:55:32.375Z [WARN]  - [2026-09-07T16:55:32.375Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Mon Sep 07 2026 21:00:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-07T17:00:00.072Z [INFO]  - [UploadCleanup] Running 72-hour cleanup job at 2026-09-07T17:00:00.072Z
+2026-09-07T17:00:00.084Z [INFO]  - [AutoMarkSubmitted] Running auto-mark submitted check at 2026-09-07T17:00:00.084Z
+2026-09-07T17:00:00.092Z [INFO]  - [UploadReminder] Cron triggered at: 2026-09-07T17:00:00.092Z
+2026-09-07T17:00:00.092Z [INFO]  - [UploadReminder] Running multi-stage reminder check at 2026-09-07T17:00:00.092Z
+2026-09-07T17:00:03.174Z [INFO]  - [UploadCleanup] No expired uploads found.
+2026-09-07T17:00:04.017Z [INFO]  - [AutoMarkSubmitted] No uploads older than 1 hour found for unsubmitted submissions.
+2026-09-07T17:00:06.435Z [INFO]  - [UploadReminder] Stage 1: 1 candidate submissions to evaluate.
+2026-09-07T17:30:00.036Z [INFO]  - [UploadReminder] Cron triggered at: 2026-09-07T17:30:00.035Z
+2026-09-07T17:30:00.037Z [INFO]  - [UploadReminder] Running multi-stage reminder check at 2026-09-07T17:30:00.037Z
+2026-09-07T17:30:03.142Z [INFO]  - [UploadReminder] Stage 1: 1 candidate submissions to evaluate.
+2026-09-07T17:30:48.156Z [INFO]  - [UploadReminder] Stage 2: 1590 candidate submissions to evaluate for multi-stage reminders.
+2026-09-07T18:00:00.114Z [INFO]  - [UploadCleanup] Running 72-hour cleanup job at 2026-09-07T18:00:00.114Z
+2026-09-07T18:00:00.124Z [INFO]  - [AutoMarkSubmitted] Running auto-mark submitted check at 2026-09-07T18:00:00.124Z
+2026-09-07T18:00:00.133Z [INFO]  - [UploadReminder] Running multi-stage reminder check at 2026-09-07T18:00:00.133Z
+2026-09-07T18:00:00.132Z [INFO]  - [UploadReminder] Cron triggered at: 2026-09-07T18:00:00.130Z
+2026-09-07T18:00:03.584Z [INFO]  - [UploadCleanup] No expired uploads found.
+2026-09-07T18:00:04.216Z [INFO]  - [AutoMarkSubmitted] No uploads older than 1 hour found for unsubmitted submissions.
+2026-09-07T18:00:05.713Z [INFO]  - [UploadReminder] Stage 1: 1 candidate submissions to evaluate.
+2026-09-07T18:00:44.359Z [INFO]  - [UploadReminder] Stage 2: 1590 candidate submissions to evaluate for multi-stage reminders.
+2026-09-08T09:11:45.563Z [WARN]  - [2026-09-08T09:11:45.563Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Tue Sep 08 2026 00:00:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-08T09:11:45.625Z [WARN]  - [2026-09-08T09:11:45.625Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Tue Sep 08 2026 00:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-08T09:11:45.699Z [WARN]  - [2026-09-08T09:11:45.699Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Tue Sep 08 2026 01:00:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-08T09:11:45.754Z [WARN]  - [2026-09-08T09:11:45.753Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Tue Sep 08 2026 01:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-08T09:11:45.796Z [WARN]  - [2026-09-08T09:11:45.796Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Tue Sep 08 2026 02:00:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-08T09:11:45.815Z [WARN]  - [2026-09-08T09:11:45.814Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Tue Sep 08 2026 02:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-08T09:11:45.824Z [WARN]  - [2026-09-08T09:11:45.824Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Tue Sep 08 2026 03:00:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-08T09:11:45.832Z [WARN]  - [2026-09-08T09:11:45.832Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Tue Sep 08 2026 03:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-08T09:11:45.839Z [WARN]  - [2026-09-08T09:11:45.839Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Tue Sep 08 2026 04:00:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-08T09:11:45.850Z [WARN]  - [2026-09-08T09:11:45.850Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Tue Sep 08 2026 04:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-08T09:11:45.859Z [WARN]  - [2026-09-08T09:11:45.859Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Tue Sep 08 2026 05:00:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-08T09:11:45.868Z [WARN]  - [2026-09-08T09:11:45.868Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Tue Sep 08 2026 05:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-08T09:11:45.875Z [WARN]  - [2026-09-08T09:11:45.875Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Tue Sep 08 2026 06:00:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-08T09:11:45.882Z [WARN]  - [2026-09-08T09:11:45.881Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Tue Sep 08 2026 06:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-08T09:11:45.887Z [WARN]  - [2026-09-08T09:11:45.887Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Tue Sep 08 2026 07:00:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-08T09:11:45.894Z [WARN]  - [2026-09-08T09:11:45.894Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Tue Sep 08 2026 07:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-08T09:11:45.903Z [WARN]  - [2026-09-08T09:11:45.903Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Tue Sep 08 2026 08:00:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-08T09:11:48.179Z [WARN]  - [2026-09-08T09:11:48.179Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Tue Sep 08 2026 08:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-08T09:11:48.378Z [WARN]  - [2026-09-08T09:11:48.378Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Tue Sep 08 2026 09:00:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-08T09:11:48.728Z [WARN]  - [2026-09-08T09:11:48.728Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Tue Sep 08 2026 09:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-08T09:11:48.936Z [WARN]  - [2026-09-08T09:11:48.936Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Tue Sep 08 2026 10:00:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-08T09:11:49.639Z [WARN]  - [2026-09-08T09:11:49.639Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Tue Sep 08 2026 10:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-08T09:11:49.872Z [WARN]  - [2026-09-08T09:11:49.872Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Tue Sep 08 2026 11:00:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-08T09:11:49.977Z [WARN]  - [2026-09-08T09:11:49.977Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Tue Sep 08 2026 11:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-08T09:11:50.065Z [WARN]  - [2026-09-08T09:11:50.065Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Tue Sep 08 2026 12:00:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-08T09:11:50.288Z [WARN]  - [2026-09-08T09:11:50.288Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Tue Sep 08 2026 12:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-08T09:11:50.485Z [WARN]  - [2026-09-08T09:11:50.485Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Tue Sep 08 2026 13:00:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-08T09:11:50.568Z [WARN]  - [2026-09-08T09:11:50.568Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Tue Sep 08 2026 13:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-08T09:11:50.669Z [WARN]  - [2026-09-08T09:11:50.669Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Tue Sep 08 2026 14:00:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-08T09:11:50.720Z [WARN]  - [2026-09-08T09:11:50.720Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Tue Sep 08 2026 14:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-08T09:11:50.793Z [WARN]  - [2026-09-08T09:11:50.793Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Tue Sep 08 2026 00:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-08T09:11:50.862Z [WARN]  - [2026-09-08T09:11:50.861Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Tue Sep 08 2026 01:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-08T09:11:50.918Z [WARN]  - [2026-09-08T09:11:50.918Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Tue Sep 08 2026 02:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-08T09:11:50.957Z [WARN]  - [2026-09-08T09:11:50.957Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Tue Sep 08 2026 03:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-08T09:11:50.990Z [WARN]  - [2026-09-08T09:11:50.990Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Tue Sep 08 2026 04:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-08T09:11:51.020Z [WARN]  - [2026-09-08T09:11:51.020Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Tue Sep 08 2026 05:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-08T09:11:51.074Z [WARN]  - [2026-09-08T09:11:51.074Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Tue Sep 08 2026 06:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-08T09:11:51.132Z [WARN]  - [2026-09-08T09:11:51.132Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Tue Sep 08 2026 07:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-08T09:11:51.188Z [WARN]  - [2026-09-08T09:11:51.188Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Tue Sep 08 2026 08:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-08T09:11:51.253Z [WARN]  - [2026-09-08T09:11:51.253Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Tue Sep 08 2026 09:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-08T09:11:51.304Z [WARN]  - [2026-09-08T09:11:51.304Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Tue Sep 08 2026 10:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-08T09:11:51.331Z [WARN]  - [2026-09-08T09:11:51.331Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Tue Sep 08 2026 11:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-08T09:11:51.358Z [WARN]  - [2026-09-08T09:11:51.358Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Tue Sep 08 2026 12:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-08T09:11:51.393Z [WARN]  - [2026-09-08T09:11:51.393Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Tue Sep 08 2026 13:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-08T09:11:51.419Z [WARN]  - [2026-09-08T09:11:51.419Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Tue Sep 08 2026 14:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-08T09:11:51.468Z [WARN]  - [2026-09-08T09:11:51.468Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Tue Sep 08 2026 00:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-08T09:11:51.494Z [WARN]  - [2026-09-08T09:11:51.494Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Tue Sep 08 2026 01:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-08T09:11:51.652Z [WARN]  - [2026-09-08T09:11:51.652Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Tue Sep 08 2026 03:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-08T09:11:51.714Z [WARN]  - [2026-09-08T09:11:51.714Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Tue Sep 08 2026 04:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-08T09:11:51.759Z [WARN]  - [2026-09-08T09:11:51.759Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Tue Sep 08 2026 05:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-08T09:11:51.891Z [WARN]  - [2026-09-08T09:11:51.891Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Tue Sep 08 2026 07:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-08T09:11:51.976Z [WARN]  - [2026-09-08T09:11:51.976Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Tue Sep 08 2026 08:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-08T09:11:52.037Z [WARN]  - [2026-09-08T09:11:52.037Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Tue Sep 08 2026 09:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-08T09:11:52.130Z [WARN]  - [2026-09-08T09:11:52.130Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Tue Sep 08 2026 10:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-08T09:11:51.558Z [WARN]  - [2026-09-08T09:11:51.558Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Tue Sep 08 2026 02:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-08T09:11:52.834Z [WARN]  - [2026-09-08T09:11:52.834Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Tue Sep 08 2026 12:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-08T09:11:52.605Z [WARN]  - [2026-09-08T09:11:52.605Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Tue Sep 08 2026 11:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-08T09:11:52.959Z [WARN]  - [2026-09-08T09:11:52.958Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Tue Sep 08 2026 13:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-08T09:11:53.016Z [WARN]  - [2026-09-08T09:11:53.016Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Tue Sep 08 2026 14:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-08T09:11:53.189Z [WARN]  - [2026-09-08T09:11:53.189Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Tue Sep 08 2026 09:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-08T09:11:51.806Z [WARN]  - [2026-09-08T09:11:51.806Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Tue Sep 08 2026 06:30:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-08T09:11:53.121Z [WARN]  - [2026-09-08T09:11:53.121Z] [PID: 21944] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Tue Sep 08 2026 02:00:00 GMT+0530 (India Standard Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+2026-09-08T09:30:00.044Z [INFO]  - [UploadReminder] Cron triggered at: 2026-09-08T09:30:00.044Z
+2026-09-08T09:30:00.052Z [INFO]  - [UploadReminder] Running multi-stage reminder check at 2026-09-08T09:30:00.052Z
+2026-09-08T09:30:03.216Z [INFO]  - [UploadReminder] Stage 1: 0 candidate submissions to evaluate.
+2026-09-08T09:30:30.614Z [INFO]  - [UploadReminder] Stage 2: 1590 candidate submissions to evaluate for multi-stage reminders.
+2026-09-08T10:00:00.069Z [INFO]  - [UploadCleanup] Running 72-hour cleanup job at 2026-09-08T10:00:00.069Z
+2026-09-08T10:00:00.136Z [INFO]  - [AutoMarkSubmitted] Running auto-mark submitted check at 2026-09-08T10:00:00.136Z
+2026-09-08T10:00:00.168Z [INFO]  - [UploadReminder] Cron triggered at: 2026-09-08T10:00:00.167Z
+2026-09-08T10:00:00.169Z [INFO]  - [UploadReminder] Running multi-stage reminder check at 2026-09-08T10:00:00.169Z
+2026-09-08T10:00:02.980Z [INFO]  - [UploadCleanup] No expired uploads found.
+2026-09-08T10:00:03.814Z [INFO]  - [AutoMarkSubmitted] No uploads older than 1 hour found for unsubmitted submissions.
+2026-09-08T10:00:04.937Z [INFO]  - [UploadReminder] Stage 1: 0 candidate submissions to evaluate.
+2026-09-08T10:00:43.806Z [INFO]  - [UploadReminder] Stage 2: 1590 candidate submissions to evaluate for multi-stage reminders.
+2026-09-08T10:30:00.039Z [INFO]  - [UploadReminder] Cron triggered at: 2026-09-08T10:30:00.039Z
+2026-09-08T10:30:00.039Z [INFO]  - [UploadReminder] Running multi-stage reminder check at 2026-09-08T10:30:00.039Z
+2026-09-08T10:30:00.424Z [INFO]  - [UploadReminder] Stage 1: 0 candidate submissions to evaluate.
+2026-09-08T10:30:36.102Z [INFO]  - [UploadReminder] Stage 2: 1590 candidate submissions to evaluate for multi-stage reminders.
+2026-09-08T10:48:23.438Z [INFO]  - [UploadReminder] Stage 4: 0 fully completed submissions to notify.
+2026-09-08T10:48:23.439Z [INFO]  - [UploadReminder] Multi-stage check complete.
+2026-09-08T11:00:00.071Z [INFO]  - [UploadCleanup] Running 72-hour cleanup job at 2026-09-08T11:00:00.071Z
+2026-09-08T11:00:00.076Z [INFO]  - [UploadReminder] Cron triggered at: 2026-09-08T11:00:00.076Z
+2026-09-08T11:00:00.078Z [INFO]  - [UploadReminder] Running multi-stage reminder check at 2026-09-08T11:00:00.078Z
+2026-09-08T11:00:00.086Z [INFO]  - [AutoMarkSubmitted] Running auto-mark submitted check at 2026-09-08T11:00:00.086Z
+2026-09-08T11:00:02.928Z [INFO]  - [UploadReminder] Stage 1: 0 candidate submissions to evaluate.
+2026-09-08T11:00:03.694Z [INFO]  - [AutoMarkSubmitted] No uploads older than 1 hour found for unsubmitted submissions.
+2026-09-08T11:30:00.031Z [INFO]  - [UploadReminder] Cron triggered at: 2026-09-08T11:30:00.031Z
+2026-09-08T11:30:00.036Z [INFO]  - [UploadReminder] Running multi-stage reminder check at 2026-09-08T11:30:00.036Z
+2026-09-08T11:30:02.775Z [INFO]  - [UploadReminder] Stage 1: 0 candidate submissions to evaluate.
+2026-09-08T11:30:49.341Z [INFO]  - [UploadReminder] Stage 2: 1590 candidate submissions to evaluate for multi-stage reminders.
+2026-09-08T12:00:00.069Z [INFO]  - [UploadCleanup] Running 72-hour cleanup job at 2026-09-08T12:00:00.069Z
+2026-09-08T12:00:00.078Z [INFO]  - [AutoMarkSubmitted] Running auto-mark submitted check at 2026-09-08T12:00:00.078Z
+2026-09-08T12:00:00.085Z [INFO]  - [UploadReminder] Cron triggered at: 2026-09-08T12:00:00.085Z
+2026-09-08T12:00:00.086Z [INFO]  - [UploadReminder] Running multi-stage reminder check at 2026-09-08T12:00:00.086Z
+2026-09-08T12:00:03.178Z [INFO]  - [UploadCleanup] No expired uploads found.
+2026-09-08T12:00:03.868Z [INFO]  - [AutoMarkSubmitted] No uploads older than 1 hour found for unsubmitted submissions.
+2026-09-08T12:00:05.095Z [INFO]  - [UploadReminder] Stage 1: 0 candidate submissions to evaluate.
+2026-09-08T12:00:32.169Z [INFO]  - [UploadReminder] Stage 2: 1590 candidate submissions to evaluate for multi-stage reminders.
+2026-09-08T12:18:24.646Z [INFO]  - [UploadReminder] Stage 4: 0 fully completed submissions to notify.
+2026-09-08T12:18:24.647Z [INFO]  - [UploadReminder] Multi-stage check complete.
+2026-09-08T12:30:00.044Z [INFO]  - [UploadReminder] Cron triggered at: 2026-09-08T12:30:00.043Z
+2026-09-08T12:30:00.045Z [INFO]  - [UploadReminder] Running multi-stage reminder check at 2026-09-08T12:30:00.045Z
+2026-09-08T12:30:02.926Z [INFO]  - [UploadReminder] Stage 1: 0 candidate submissions to evaluate.
+2026-09-08T12:30:33.447Z [INFO]  - [UploadReminder] Stage 2: 1590 candidate submissions to evaluate for multi-stage reminders.
+2026-09-08T13:00:00.075Z [INFO]  - [UploadCleanup] Running 72-hour cleanup job at 2026-09-08T13:00:00.075Z
+2026-09-08T13:00:00.081Z [INFO]  - [UploadReminder] Cron triggered at: 2026-09-08T13:00:00.081Z
+2026-09-08T13:00:00.083Z [INFO]  - [UploadReminder] Running multi-stage reminder check at 2026-09-08T13:00:00.083Z
+2026-09-08T13:00:00.092Z [INFO]  - [AutoMarkSubmitted] Running auto-mark submitted check at 2026-09-08T13:00:00.092Z
+2026-09-08T13:00:03.209Z [INFO]  - [UploadReminder] Stage 1: 0 candidate submissions to evaluate.
+2026-09-08T13:00:03.211Z [INFO]  - [UploadCleanup] No expired uploads found.
+2026-09-08T13:00:08.077Z [INFO]  - [AutoMarkSubmitted] No uploads older than 1 hour found for unsubmitted submissions.
+2026-09-08T13:00:58.760Z [INFO]  - [UploadReminder] Stage 2: 1590 candidate submissions to evaluate for multi-stage reminders.

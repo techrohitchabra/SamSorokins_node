@@ -5,6 +5,7 @@ import WebhookErrorLog from "./webhookErrorLog/index.js";
 import UploadReminderLog from "./uploadReminderLog/index.js";
 import Key from "./key";
 import RequestLog from "./requestLog/index.js";
+import TestSubmission from "./testSubmission/index.js";
 
 /**
  * @module Schema
@@ -19,4 +20,5 @@ export {
   UploadReminderLog,
   Key,
   RequestLog,
+  TestSubmission,
 };

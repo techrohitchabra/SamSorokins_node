@@ -34,3 +34,128 @@ It will no longer receive updates or releases.
 Please migrate your code to use AWS SDK for JavaScript (v3).
 For more information, check the blog post at https://a.co/cUPnyil
 (Use `node --trace-warnings ...` to show where the warning was created)
+2026-09-05T16:16:33.988Z [ERROR] - (node:21944) NOTE: The AWS SDK for JavaScript (v2) has reached end-of-support.
+It will no longer receive updates or releases.
+
+Please migrate your code to use AWS SDK for JavaScript (v3).
+For more information, check the blog post at https://a.co/cUPnyil
+(Use `node --trace-warnings ...` to show where the warning was created)
+2026-09-06T17:53:45.588Z [ERROR] - [UploadReminder] Fatal error in reminder cron job: PoolClearedOnNetworkError: Connection to ac-mrx4wmu-shard-00-01.onss6mu.mongodb.net:27017 interrupted due to server monitor timeout
+    at ConnectionPool.interruptInUseConnections (G:\Projects\Git-TechRohit\SamSorokins\SamSorokins_node\node_modules\mongodb\src\cmap\connection_pool.ts:486:28)
+    at G:\Projects\Git-TechRohit\SamSorokins\SamSorokins_node\node_modules\mongodb\src\cmap\connection_pool.ts:472:35
+    at processTicksAndRejections (node:internal/process/task_queues:77:11) {
+  errorLabelSet: Set(1) { 'PoolRequstedRetry' },
+  beforeHandshake: false,
+  address: 'ac-mrx4wmu-shard-00-01.onss6mu.mongodb.net:27017',
+  [cause]: MongoNetworkTimeoutError: connection <monitor> to 89.195.124.224:27017 timed out
+      at Timeout._onTimeout (G:\Projects\Git-TechRohit\SamSorokins\SamSorokins_node\node_modules\mongodb\src\cmap\connection.ts:320:20)
+      at listOnTimeout (node:internal/timers:581:17)
+      at processTimers (node:internal/timers:519:7) {
+    errorLabelSet: Set(2) { 'ResetPool', 'InterruptInUseConnections' },
+    beforeHandshake: false,
+    [cause]: undefined
+  }
+}
+2026-09-06T17:59:26.725Z [ERROR] - [testSubmissions/get] Error: PoolClearedOnNetworkError: Connection to ac-mrx4wmu-shard-00-01.onss6mu.mongodb.net:27017 interrupted due to server monitor timeout
+    at ConnectionPool.interruptInUseConnections (G:\Projects\Git-TechRohit\SamSorokins\SamSorokins_node\node_modules\mongodb\src\cmap\connection_pool.ts:486:28)
+    at G:\Projects\Git-TechRohit\SamSorokins\SamSorokins_node\node_modules\mongodb\src\cmap\connection_pool.ts:472:35
+    at processTicksAndRejections (node:internal/process/task_queues:77:11) {
+  errorLabelSet: Set(1) { 'PoolRequstedRetry' },
+  beforeHandshake: false,
+  address: 'ac-mrx4wmu-shard-00-01.onss6mu.mongodb.net:27017',
+  [cause]: MongoNetworkTimeoutError: connection <monitor> to 89.195.124.224:27017 timed out
+      at Timeout._onTimeout (G:\Projects\Git-TechRohit\SamSorokins\SamSorokins_node\node_modules\mongodb\src\cmap\connection.ts:320:20)
+      at listOnTimeout (node:internal/timers:581:17)
+      at processTimers (node:internal/timers:519:7) {
+    errorLabelSet: Set(2) { 'ResetPool', 'InterruptInUseConnections' },
+    beforeHandshake: false,
+    [cause]: undefined
+  }
+}
+2026-09-06T17:59:26.804Z - ERROR: Connection to ac-mrx4wmu-shard-00-01.onss6mu.mongodb.net:27017 interrupted due to server monitor timeout, CODE: N/A, STATUS: 500, URL: /testSubmissions, METHOD: GET, USER: Guest, ROLE: N/A, IP: ::1
+2026-09-06T18:04:53.927Z [ERROR] - [UploadReminder] Fatal error in reminder cron job: Error: read ECONNRESET
+    at TLSWrap.onStreamRead (node:internal/stream_base_commons:218:20) {
+  errno: -4077,
+  code: 'ECONNRESET',
+  syscall: 'read'
+}
+2026-09-07T16:55:30.547Z [ERROR] - [UploadReminder] Fatal error in reminder cron job: Error: read ECONNRESET
+    at TLSWrap.onStreamRead (node:internal/stream_base_commons:218:20) {
+  errno: -4077,
+  code: 'ECONNRESET',
+  syscall: 'read'
+}
+2026-09-07T17:02:39.047Z [ERROR] - [UploadReminder] Fatal error in reminder cron job: PoolClearedOnNetworkError: Connection to ac-mrx4wmu-shard-00-01.onss6mu.mongodb.net:27017 interrupted due to server monitor timeout
+    at ConnectionPool.interruptInUseConnections (G:\Projects\Git-TechRohit\SamSorokins\SamSorokins_node\node_modules\mongodb\src\cmap\connection_pool.ts:486:28)
+    at G:\Projects\Git-TechRohit\SamSorokins\SamSorokins_node\node_modules\mongodb\src\cmap\connection_pool.ts:472:35
+    at processTicksAndRejections (node:internal/process/task_queues:77:11) {
+  errorLabelSet: Set(1) { 'PoolRequstedRetry' },
+  beforeHandshake: false,
+  address: 'ac-mrx4wmu-shard-00-01.onss6mu.mongodb.net:27017',
+  [cause]: MongoNetworkTimeoutError: connection <monitor> to 89.195.124.224:27017 timed out
+      at Timeout._onTimeout (G:\Projects\Git-TechRohit\SamSorokins\SamSorokins_node\node_modules\mongodb\src\cmap\connection.ts:320:20)
+      at listOnTimeout (node:internal/timers:581:17)
+      at processTimers (node:internal/timers:519:7) {
+    errorLabelSet: Set(2) { 'ResetPool', 'InterruptInUseConnections' },
+    beforeHandshake: false,
+    [cause]: undefined
+  }
+}
+2026-09-07T17:35:24.918Z [ERROR] - [UploadReminder] Fatal error in reminder cron job: Error: read ECONNRESET
+    at TLSWrap.onStreamRead (node:internal/stream_base_commons:218:20) {
+  errno: -4077,
+  code: 'ECONNRESET',
+  syscall: 'read'
+}
+2026-09-07T18:05:32.176Z [ERROR] - [UploadReminder] Fatal error in reminder cron job: Error: read ECONNRESET
+    at TLSWrap.onStreamRead (node:internal/stream_base_commons:218:20) {
+  errno: -4077,
+  code: 'ECONNRESET',
+  syscall: 'read'
+}
+2026-09-08T09:43:54.102Z [ERROR] - [UploadReminder] Fatal error in reminder cron job: Error: read ECONNRESET
+    at TLSWrap.onStreamRead (node:internal/stream_base_commons:218:20) {
+  errno: -4077,
+  code: 'ECONNRESET',
+  syscall: 'read'
+}
+2026-09-08T10:05:36.245Z [ERROR] - [UploadReminder] Fatal error in reminder cron job: Error: read ECONNRESET
+    at TLSWrap.onStreamRead (node:internal/stream_base_commons:218:20) {
+  errno: -4077,
+  code: 'ECONNRESET',
+  syscall: 'read'
+}
+2026-09-08T11:00:26.897Z [ERROR] - [UploadCleanup] Fatal error: Error: read ECONNRESET
+    at TLSWrap.onStreamRead (node:internal/stream_base_commons:218:20) {
+  errno: -4077,
+  code: 'ECONNRESET',
+  syscall: 'read'
+}
+2026-09-08T11:00:33.824Z [ERROR] - [UploadReminder] Fatal error in reminder cron job: PoolClearedOnNetworkError: Connection to ac-mrx4wmu-shard-00-02.onss6mu.mongodb.net:27017 interrupted due to server monitor timeout
+    at ConnectionPool.interruptInUseConnections (G:\Projects\Git-TechRohit\SamSorokins\SamSorokins_node\node_modules\mongodb\src\cmap\connection_pool.ts:486:28)
+    at G:\Projects\Git-TechRohit\SamSorokins\SamSorokins_node\node_modules\mongodb\src\cmap\connection_pool.ts:472:35
+    at processTicksAndRejections (node:internal/process/task_queues:77:11) {
+  errorLabelSet: Set(1) { 'PoolRequstedRetry' },
+  beforeHandshake: false,
+  address: 'ac-mrx4wmu-shard-00-02.onss6mu.mongodb.net:27017',
+  [cause]: MongoNetworkTimeoutError: connection <monitor> to 89.195.124.239:27017 timed out
+      at Timeout._onTimeout (G:\Projects\Git-TechRohit\SamSorokins\SamSorokins_node\node_modules\mongodb\src\cmap\connection.ts:320:20)
+      at listOnTimeout (node:internal/timers:581:17)
+      at processTimers (node:internal/timers:519:7) {
+    errorLabelSet: Set(2) { 'ResetPool', 'InterruptInUseConnections' },
+    beforeHandshake: false,
+    [cause]: undefined
+  }
+}
+2026-09-08T11:33:37.219Z [ERROR] - [UploadReminder] Fatal error in reminder cron job: Error: read ECONNRESET
+    at TLSWrap.onStreamRead (node:internal/stream_base_commons:218:20) {
+  errno: -4077,
+  code: 'ECONNRESET',
+  syscall: 'read'
+}
+2026-09-08T12:38:34.849Z [ERROR] - [UploadReminder] Fatal error in reminder cron job: Error: read ECONNRESET
+    at TLSWrap.onStreamRead (node:internal/stream_base_commons:218:20) {
+  errno: -4077,
+  code: 'ECONNRESET',
+  syscall: 'read'
+}

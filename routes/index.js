@@ -15,6 +15,7 @@ import rentManager from "./rentManager";
 import keys from "./keys";
 import leaseRenewal from "./leaseRenewal";
 import requestLogs from "./requestLogs";
+import testSubmissions from "./testSubmissions";
 
 /**
  * @module Routes
@@ -37,5 +38,6 @@ router.use("/rentManager", postman, rentManager);
 router.use("/keys", keys);
 router.use("/leaseRenewal", leaseRenewal);
 router.use("/requestLogs", requestLogs);
+router.use("/testSubmissions", testSubmissions);
 
 export default router;
