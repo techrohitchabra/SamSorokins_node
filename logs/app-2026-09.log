@@ -70,3 +70,138 @@
 2026-09-05T16:00:00.655Z [INFO]  - [UploadReminder] Stage 1: 0 candidate submissions to evaluate.
 2026-09-05T16:00:01.630Z [INFO]  - [AutoMarkSubmitted] No uploads older than 1 hour found for unsubmitted submissions.
 2026-09-05T16:00:28.747Z [INFO]  - [UploadReminder] Stage 2: 1589 candidate submissions to evaluate for multi-stage reminders.
+2026-09-19T06:24:56.407Z [INFO]  - Server is running on http://localhost:8000
+2026-09-19T06:25:02.635Z [INFO]  - Database connected....
+2026-09-19T06:25:02.987Z [INFO]  - ✅ Default admin already exists
+2026-09-19T08:41:46.051Z [INFO]  - Server is running on http://localhost:8000
+2026-09-19T08:41:49.964Z [INFO]  - Database connected....
+2026-09-19T08:41:50.326Z [INFO]  - ✅ Default admin already exists
+2026-09-19T08:42:22.125Z [INFO]  - Email sent successfully: {
+  accepted: [ 'testrohit1993@gmail.com' ],
+  rejected: [],
+  ehlo: [
+    'SIZE 157286400',
+    'PIPELINING',
+    'DSN',
+    'ENHANCEDSTATUSCODES',
+    'AUTH LOGIN XOAUTH2',
+    '8BITMIME',
+    'BINARYMIME',
+    'CHUNKING',
+    'SMTPUTF8'
+  ],
+  envelopeTime: 940,
+  messageTime: 489,
+  messageSize: 3524,
+  response: '250 2.0.0 OK <cc5d354c-72d7-a1b8-459f-cc2c23c447b8@premiumpd.com> [Hostname=DS4PR11MB292408.namprd11.prod.outlook.com]',
+  envelope: { from: 'info@premiumpd.com', to: [ 'testrohit1993@gmail.com' ] },
+  messageId: '<cc5d354c-72d7-a1b8-459f-cc2c23c447b8@premiumpd.com>'
+}
+2026-09-19T08:43:28.142Z [INFO]  - [RM Auth] Fetching new token (Attempt 1/3)...
+2026-09-19T08:43:28.185Z [INFO]  - [RM Auth] Fetching new token (Attempt 1/3)...
+2026-09-19T08:43:28.170Z [INFO]  - [RM Auth] Fetching new token (Attempt 1/3)...
+2026-09-19T08:43:30.463Z [INFO]  - [RM Auth] New token acquired and cached.
+2026-09-19T08:43:30.486Z [INFO]  - [RM Auth] New token acquired and cached.
+2026-09-19T08:43:30.497Z [INFO]  - [RM Auth] New token acquired and cached.
+2026-09-19T08:43:31.155Z [WARN]  - [RM-Properties] Attempt 1 (embeds=Property) failed: {
+  DeveloperMessage: 'The given key was not present in the dictionary.',
+  UserMessage: 'Unspecified Error',
+  ErrorCode: -2146232969,
+  MoreInfoUri: 'https://premiumprop.api.rentmanager.com/Help/Subresource/Properties/UserDefinedValues',
+  Exception: 'KeyNotFoundException',
+  MetaTag: null,
+  Details: null,
+  InnerException: null,
+  AdditionalData: {}
+}
+2026-09-19T08:43:31.685Z [INFO]  - [RM Auth] Using cached token.
+2026-09-19T08:43:32.313Z [INFO]  - [RM Auth] Using cached token.
+2026-09-19T08:43:32.677Z [WARN]  - [RM-Properties] Attempt 1 (embeds=Property) failed: {
+  DeveloperMessage: 'The given key was not present in the dictionary.',
+  UserMessage: 'Unspecified Error',
+  ErrorCode: -2146232969,
+  MoreInfoUri: 'https://premiumprop.api.rentmanager.com/Help/Subresource/Properties/UserDefinedValues',
+  Exception: 'KeyNotFoundException',
+  MetaTag: null,
+  Details: null,
+  InnerException: null,
+  AdditionalData: {}
+}
+2026-09-19T08:43:35.255Z [INFO]  - [RM Auth] Using cached token.
+2026-09-19T08:43:43.536Z [INFO]  - [RM Auth] Using cached token.
+2026-09-19T08:43:48.202Z [INFO]  - [RM Auth] Using cached token.
+2026-09-19T08:43:49.491Z [INFO]  - [RM Auth] Using cached token.
+2026-09-19T08:43:49.503Z [INFO]  - [RM Auth] Using cached token.
+2026-09-19T08:43:49.670Z [INFO]  - [RM Auth] Using cached token.
+2026-09-19T08:43:50.398Z [INFO]  - [RM Auth] Using cached token.
+2026-09-19T08:43:51.206Z [INFO]  - [RM Auth] Using cached token.
+2026-09-19T08:43:51.744Z [INFO]  - [RM Auth] Using cached token.
+2026-09-19T08:43:51.752Z [INFO]  - [RM Auth] Using cached token.
+2026-09-19T08:43:52.608Z [INFO]  - [RM Auth] Using cached token.
+2026-09-19T08:43:53.501Z [INFO]  - [RM Auth] Using cached token.
+2026-09-19T08:45:17.589Z [INFO]  - [RM Auth] Using cached token.
+2026-09-19T08:45:17.601Z [INFO]  - [RM Auth] Using cached token.
+2026-09-19T08:45:17.612Z [INFO]  - [RM Auth] Using cached token.
+2026-09-19T08:45:18.930Z [WARN]  - [RM-Properties] Attempt 1 (embeds=Property) failed: {
+  DeveloperMessage: 'The given key was not present in the dictionary.',
+  UserMessage: 'Unspecified Error',
+  ErrorCode: -2146232969,
+  MoreInfoUri: 'https://premiumprop.api.rentmanager.com/Help/Subresource/Properties/UserDefinedValues',
+  Exception: 'KeyNotFoundException',
+  MetaTag: null,
+  Details: null,
+  InnerException: null,
+  AdditionalData: {}
+}
+2026-09-19T08:45:19.574Z [INFO]  - [RM Auth] Using cached token.
+2026-09-19T08:45:20.061Z [INFO]  - [RM Auth] Using cached token.
+2026-09-19T08:45:20.387Z [WARN]  - [RM-Properties] Attempt 1 (embeds=Property) failed: {
+  DeveloperMessage: 'The given key was not present in the dictionary.',
+  UserMessage: 'Unspecified Error',
+  ErrorCode: -2146232969,
+  MoreInfoUri: 'https://premiumprop.api.rentmanager.com/Help/Subresource/Properties/UserDefinedValues',
+  Exception: 'KeyNotFoundException',
+  MetaTag: null,
+  Details: null,
+  InnerException: null,
+  AdditionalData: {}
+}
+2026-09-19T08:45:22.199Z [INFO]  - [RM Auth] Using cached token.
+2026-09-19T08:47:04.142Z [INFO]  - [RM Auth] Using cached token.
+2026-09-19T08:47:04.159Z [INFO]  - [RM Auth] Using cached token.
+2026-09-19T08:47:04.183Z [INFO]  - [RM Auth] Using cached token.
+2026-09-19T08:47:05.624Z [WARN]  - [RM-Properties] Attempt 1 (embeds=Property) failed: {
+  DeveloperMessage: 'The given key was not present in the dictionary.',
+  UserMessage: 'Unspecified Error',
+  ErrorCode: -2146232969,
+  MoreInfoUri: 'https://premiumprop.api.rentmanager.com/Help/Subresource/Properties/UserDefinedValues',
+  Exception: 'KeyNotFoundException',
+  MetaTag: null,
+  Details: null,
+  InnerException: null,
+  AdditionalData: {}
+}
+2026-09-19T08:47:06.421Z [INFO]  - [RM Auth] Using cached token.
+2026-09-19T08:47:07.017Z [INFO]  - [RM Auth] Using cached token.
+2026-09-19T08:47:07.417Z [WARN]  - [RM-Properties] Attempt 1 (embeds=Property) failed: {
+  DeveloperMessage: 'The given key was not present in the dictionary.',
+  UserMessage: 'Unspecified Error',
+  ErrorCode: -2146232969,
+  MoreInfoUri: 'https://premiumprop.api.rentmanager.com/Help/Subresource/Properties/UserDefinedValues',
+  Exception: 'KeyNotFoundException',
+  MetaTag: null,
+  Details: null,
+  InnerException: null,
+  AdditionalData: {}
+}
+2026-09-19T08:47:09.350Z [INFO]  - [RM Auth] Using cached token.
+2026-09-19T09:00:00.055Z [INFO]  - [UploadReminder] Cron triggered at: 2026-09-19T09:00:00.055Z
+2026-09-19T09:00:00.057Z [INFO]  - [UploadReminder] Running multi-stage reminder check at 2026-09-19T09:00:00.057Z
+2026-09-19T09:00:00.063Z [INFO]  - [UploadCleanup] Running 72-hour cleanup job at 2026-09-19T09:00:00.063Z
+2026-09-19T09:00:00.071Z [INFO]  - [AutoMarkSubmitted] Running auto-mark submitted check at 2026-09-19T09:00:00.071Z
+2026-09-19T09:00:00.408Z [INFO]  - [UploadCleanup] No expired uploads found.
+2026-09-19T09:00:00.420Z [INFO]  - [UploadReminder] Stage 1: 0 candidate submissions to evaluate.
+2026-09-19T09:00:01.150Z [INFO]  - [AutoMarkSubmitted] No uploads older than 1 hour found for unsubmitted submissions.
+2026-09-19T09:00:45.919Z [INFO]  - [UploadReminder] Stage 2: 1602 candidate submissions to evaluate for multi-stage reminders.
+2026-09-19T09:19:21.886Z [INFO]  - [UploadReminder] Stage 4: 0 fully completed submissions to notify.
+2026-09-19T09:19:21.887Z [INFO]  - [UploadReminder] Multi-stage check complete.
