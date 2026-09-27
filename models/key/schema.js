@@ -127,6 +127,11 @@ const keySchema = new mongoose.Schema(
       trim: true,
       default: "",
     },
+    notes: {
+      type: String,
+      trim: true,
+      default: "",
+    },
     accessLog: {
       type: [String],
       default: [],

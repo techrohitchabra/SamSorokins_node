@@ -2,7 +2,15 @@ import { Key } from "../../models";
 
 export const getKeysData = async (req, res, next) => {
   try {
-    const { search, status, page, pageSize, limit: queryLimit } = req.query;
+    const {
+      search,
+      status,
+      page,
+      pageSize,
+      limit: queryLimit,
+      sortField = "createdAt",
+      sortOrder = "desc",
+    } = req.query;
 
     const baseQuery = { isDeleted: { $ne: true } };
 
@@ -96,8 +104,33 @@ export const getKeysData = async (req, res, next) => {
     // 4. Count total documents matching current search + status query
     const total = await Key.countDocuments(query);
 
-    // 5. Server-side Pagination
-    let keysQuery = Key.find(query).sort({ createdAt: -1 });
+    // 5. Server-side Pagination & Sorting
+    const sortDir = sortOrder === "asc" ? 1 : -1;
+    const actualSortField = sortField || "createdAt";
+
+    let sortOptions = {};
+
+    if (actualSortField === "vendor") {
+      sortOptions = { vendor: sortDir, whoWillPickUp: sortDir, whoHasIt: sortDir, createdAt: -1 };
+    } else if (actualSortField === "requestType") {
+      sortOptions = { userType: sortDir, createdAt: -1 };
+    } else if (actualSortField === "serviceIssue") {
+      sortOptions = { serviceIssue: sortDir, serviceRequest: sortDir, createdAt: -1 };
+    } else if (actualSortField === "property") {
+      sortOptions = { property: sortDir, communityCode: sortDir, createdAt: -1 };
+    } else if (actualSortField === "unit") {
+      sortOptions = { unit: sortDir, createdAt: -1 };
+    } else if (actualSortField === "rfId") {
+      sortOptions = { rfId: sortDir, rfid: sortDir, frId: sortDir, createdAt: -1 };
+    } else if (actualSortField === "createdAt") {
+      sortOptions = { createdAt: sortDir };
+    } else {
+      sortOptions = { [actualSortField]: sortDir, createdAt: -1 };
+    }
+
+    let keysQuery = Key.find(query)
+      .sort(sortOptions)
+      .collation({ locale: "en", numericOrdering: true });
 
     const limitVal = pageSize !== undefined ? pageSize : queryLimit;
     const pageVal = page;
