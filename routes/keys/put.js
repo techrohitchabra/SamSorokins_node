@@ -5,7 +5,7 @@ import { updateRentManagerKeyStatus } from "../../utils/rentManager";
 export default async (req, res, next) => {
   try {
     const { id } = req.params;
-    const { vendor, rfId, whoHasIt, status, lostReason } = req.body;
+    const { vendor, rfId, whoHasIt, status, lostReason, notes } = req.body;
 
     const key = await Key.findById(id);
     if (!key) {
@@ -28,6 +28,10 @@ export default async (req, res, next) => {
     if (lostReason !== undefined && lostReason !== key.lostReason) {
       key.lostReason = lostReason.trim();
       // isChanged = true;
+    }
+
+    if (notes !== undefined && notes !== key.notes) {
+      key.notes = notes.trim();
     }
 
     if (status !== undefined && status !== key.status) {
