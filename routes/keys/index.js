@@ -5,6 +5,7 @@ import checkout from "./post";
 import update from "./put";
 import retKey from "./return";
 import deleteKey from "./delete";
+import getByRfid from "./getByRfid";
 import webhook from "./webhook";
 import nonVendorWebhook from "./nonVendorWebhook";
 import keyManagementWebhook from "./keyManagementWebhook";
@@ -20,6 +21,7 @@ router.post("/webhook/key-management", upload.none(), keyManagementWebhook); // 
 
 // Protected routes
 router.get("/", authOnly, getKeysData);
+router.get("/by-rfid/:rfId", authOnly, getByRfid);
 router.post("/checkout", authOnly, checkout);
 router.put("/:id", authOnly, update);
 router.post("/:id/return", authOnly, retKey);
