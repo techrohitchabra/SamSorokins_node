@@ -34,7 +34,13 @@ export default async (req, res, next) => {
           ],
         },
       ],
-    }).sort({ createdAt: -1 });
+    })
+      .populate({
+        path: "createdBy",
+        select: "firstName lastName email recordId fullName",
+        model: "Users",
+      })
+      .sort({ createdAt: -1 });
 
     // Condition: Return 404 error if no matching active key records found
     if (!keys || keys.length === 0) {

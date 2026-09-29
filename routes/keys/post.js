@@ -27,12 +27,23 @@ export default async (req, res, next) => {
       pickerEmail,
       willBeReturned,
       whyNotReturned,
+      createdBy,
     } = req.body;
 
     const vendorName = (vendor || "").trim();
     const propertyName = (property || "").trim();
     const unitName = (unit || "").trim();
     const serviceIssueNum = (serviceIssue || "").trim();
+
+    const creatorUserId =
+      createdBy ||
+      (req.user ? req.user._id || req.user.id || req.user.recordId : null);
+
+    const creatorName = req.user
+      ? `${req.user.firstName || ""} ${req.user.lastName || ""}`.trim() ||
+        req.user.email ||
+        ""
+      : "";
 
     if (!vendorName || !propertyName) {
       return res.status(400).json({
@@ -44,7 +55,7 @@ export default async (req, res, next) => {
     const reqType = userType || "Vendor";
     let logMessage = `${new Date().toLocaleString()}: Key request created (${reqType}). Requester: ${vendorName}, Property: ${propertyName}${
       unitName ? ` (Unit: ${unitName})` : ""
-    }`;
+    }${creatorName ? `. Created by: ${creatorName}` : ""}`;
     if (keyStatus === "Lost" && lostReason) {
       logMessage += `. Reason: ${lostReason}`;
     }
@@ -73,6 +84,7 @@ export default async (req, res, next) => {
       pickerEmail: pickerEmail || "",
       willBeReturned: willBeReturned || "",
       whyNotReturned: whyNotReturned || "",
+      createdBy: creatorUserId,
       source: "System",
       isReturned: keyStatus === "Checked In",
       returnedAt: keyStatus === "Checked In" ? new Date() : null,

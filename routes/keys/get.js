@@ -129,6 +129,11 @@ export const getKeysData = async (req, res, next) => {
     }
 
     let keysQuery = Key.find(query)
+      .populate({
+        path: "createdBy",
+        select: "firstName lastName email recordId fullName",
+        model: "Users",
+      })
       .sort(sortOptions)
       .collation({ locale: "en", numericOrdering: true });
 
