@@ -1,5 +1,6 @@
 import { Key } from "../../models";
 import { sendKeyStatusEmail } from "../../methods/sendKeyStatusEmail";
+import { updateRentManagerKeyStatus } from "../../utils/rentManager";
 
 export default async (req, res, next) => {
   try {
@@ -93,6 +94,14 @@ export default async (req, res, next) => {
 
     await newKey.save();
     // sendKeyStatusEmail(newKey);
+
+    //update status in rentmanager
+    if (serviceIssueNum) {
+      updateRentManagerKeyStatus(newKey).catch((err) =>
+        console.error("[RM UpdateKeyStatus Error]", err)
+      );
+    }
+
     return res.json({
       message: "Key request created successfully",
       key: newKey,

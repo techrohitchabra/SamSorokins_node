@@ -71,8 +71,8 @@ export default async (req, res, next) => {
 
     await key.save();
     if (statusChanged) {
-      sendKeyStatusEmail(key); // send email in background
-      if (["Checked Out", "Checked In", "Lost"].includes(key.status)) {
+      sendKeyStatusEmail(key); // send email in background for all requests
+      if (key?.serviceIssue) {
         updateRentManagerKeyStatus(key).catch((err) =>
           console.error("[RM UpdateKeyStatus Error]", err)
         );

@@ -1,10 +1,11 @@
 import { Key } from "../../models";
 import { sendKeyStatusEmail } from "../../methods/sendKeyStatusEmail";
+import { updateRentManagerKeyStatus } from "../../utils/rentManager";
 
 /**
  * Controller to process key check-in / return action.
  * Updates key status to 'Checked In', updates returnedAt timestamp, appends to accessLog,
- * and triggers background email notification.
+ * triggers background email notification, and updates Rent Manager UDF status.
  */
 export default async (req, res, next) => {
   try {
@@ -34,6 +35,13 @@ export default async (req, res, next) => {
       status: "Checked In",
     };
     sendKeyStatusEmail(keyCopy); // Send notification email asynchronously
+
+    // Condition: Update Rent Manager status to "Checked In" asynchronously
+    if (key?.serviceIssue) {
+      updateRentManagerKeyStatus(key).catch((err) =>
+        console.error("[RM UpdateKeyStatus Error]", err)
+      );
+    }
 
     return res.json({ message: "Key returned successfully", key });
   } catch (error) {

@@ -1310,45 +1310,32 @@ router.get("/units", async (req, res) => {
 
 /**
  * GET /users
- * Get Users from Rent Manager (filtered for key vault users with fallback)
+ * Get all Users from Rent Manager (excluding "<Unassigned>")
  */
 router.get("/users", async (req, res) => {
   try {
     const headers = await getRMHeaders();
-    try {
-      const response = await axios.get(`${process.env.RM_BASE_URL}/Users`, {
-        headers,
-        params: {
-          filters:
-            "UserDefinedValues.UserDefinedFieldID,eq,1391;UserDefinedValues.Value,eq,Yes",
-          embeds: "PhoneNumbers,UserDefinedValues",
-          fields:
-            "Email,Firstname,Lastname,Name,PhoneNumbers,UserDefinedValues,UserID,Username,UserTitle",
-          pageSize: 1000,
-        },
-      });
-      const users = Array.isArray(response.data) ? response.data : [];
-      if (users.length > 0) {
-        return res.status(200).json({ success: true, users });
-      }
-    } catch (errFilter) {
-      console.warn(
-        "[RM-Users] Filtered query failed, falling back to all Users:",
-        errFilter.message
-      );
-    }
-
-    // Fallback: Query /Users without filters
-    const fallbackRes = await axios.get(`${process.env.RM_BASE_URL}/Users`, {
+    const response = await axios.get(`${process.env.RM_BASE_URL}/Users`, {
       headers,
       params: {
-        embeds: "PhoneNumbers",
+        embeds: "PhoneNumbers,UserDefinedValues",
         fields:
-          "Email,Firstname,Lastname,Name,PhoneNumbers,UserID,Username,UserTitle",
-        pageSize: 1000,
+          "Email,Firstname,Lastname,Name,PhoneNumbers,UserDefinedValues,UserID,Username,UserTitle",
+        pageSize: 1500,
       },
     });
-    const users = Array.isArray(fallbackRes.data) ? fallbackRes.data : [];
+    const rawUsers = Array.isArray(response.data) ? response.data : [];
+    const users = rawUsers.filter((u) => {
+      if (!u) return false;
+      const name = (u.Name || "").trim();
+      const username = (u.Username || "").trim();
+      const firstname = (u.Firstname || "").trim();
+      return (
+        name !== "<Unassigned>" &&
+        username !== "<Unassigned>" &&
+        firstname !== "<Unassigned>"
+      );
+    });
     return res.status(200).json({ success: true, users });
   } catch (error) {
     console.error("[RM-Users] Error:", error.response?.data || error.message);

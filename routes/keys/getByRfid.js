@@ -3,7 +3,7 @@ import { Key } from "../../models";
 /**
  * Controller to fetch active key checkout records matching a given RFID code.
  * Searches case-insensitively across rfId, rfid, and frId fields for non-deleted keys
- * with active checkout statuses ('Checked Out', 'To Be Returned', 'Outstanding', 'Lost').
+ * with active checkout/pending statuses ('Requested', 'Checked Out', 'To Be Returned', 'Outstanding', 'Lost').
  */
 export default async (req, res, next) => {
   try {
@@ -15,9 +15,9 @@ export default async (req, res, next) => {
       return res.status(400).json({ message: "RFID is required" });
     }
 
-    // Escape regex special characters for safe case-insensitive exact string match
+    // Escape regex special characters for safe case-insensitive string match
     const escapedRfid = trimmedRfid.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-    const rfidRegex = new RegExp(`^${escapedRfid}$`, "i");
+    const rfidRegex = new RegExp(escapedRfid, "i");
 
     // Query active keys matching RFID code with pending return status
     const keys = await Key.find({
@@ -26,7 +26,8 @@ export default async (req, res, next) => {
       $and: [
         {
           $or: [
-            // Condition: Match keys in checked-out / outstanding / lost state
+            // Condition: Match keys in requested / checked-out / outstanding / lost state
+            { status: { $regex: /^requested$/i } },
             { status: { $regex: /^checked out$/i } },
             { status: { $regex: /^to be returned$/i } },
             { status: { $regex: /^outstanding$/i } },
@@ -42,13 +43,8 @@ export default async (req, res, next) => {
       })
       .sort({ createdAt: -1 });
 
-    // Condition: Return 404 error if no matching active key records found
-    if (!keys || keys.length === 0) {
-      return res.status(404).json({ message: "No Key Record Found" });
-    }
-
-    // Return matched key records
-    return res.json({ keys });
+    // Return matched key records (return empty array if no match found)
+    return res.json({ keys: keys || [] });
   } catch (error) {
     next(error);
   }
