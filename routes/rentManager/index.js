@@ -1118,7 +1118,13 @@ router.get("/vendors", async (req, res) => {
     const response = await axios.get(`${process.env.RM_BASE_URL}/Vendors`, {
       headers,
       params: {
-        filters: "IsActive,eq,true",
+        //  filters: "IsActive,eq,true",
+        //   orderingOptions: "NameAsc",
+        //   embeds: "Contact,Contact.PhoneNumbers",
+        //   fields: "Contact,Name,VendorID",
+        //   pageSize: 1000,
+        filters:
+          "UserDefinedValues.Value,in,(Operations,PCS,Consulting);UserDefinedValues.UserDefinedFieldID,eq,1358;IsActive,eq,true;UserDefinedValues.UserDefinedFieldID,eq,12;UserDefinedValues.Value,ct,Active",
         orderingOptions: "NameAsc",
         embeds: "Contact,Contact.PhoneNumbers",
         fields: "Contact,Name,VendorID",
