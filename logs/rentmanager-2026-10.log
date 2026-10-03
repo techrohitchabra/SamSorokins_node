@@ -1,0 +1,2 @@
+2026-10-03T03:52:11.435Z - {"timestamp":"2026-10-03T03:52:11.435Z","type":"KEY_STATUS_RM_UDF_UPDATE","keyId":"6ac07be5a27ef5be274e515a","serviceIssue":"25882255","status":"attempted","message":"Rent Manager UDFs updated for ServiceManagerIssue 25882255 with status \"Requested\""}
+2026-10-03T03:53:19.319Z - {"timestamp":"2026-10-03T03:53:19.319Z","type":"KEY_STATUS_RM_UDF_UPDATE","keyId":"6ac07c29a27ef5be274e5169","serviceIssue":"8225552","status":"attempted","message":"Rent Manager UDFs updated for ServiceManagerIssue 8225552 with status \"Requested\""}

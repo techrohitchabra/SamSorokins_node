@@ -1331,17 +1331,39 @@ router.get("/users", async (req, res) => {
       },
     });
     const rawUsers = Array.isArray(response.data) ? response.data : [];
-    const users = rawUsers.filter((u) => {
-      if (!u) return false;
+    const seenNames = new Set();
+    const users = [];
+
+    for (const u of rawUsers) {
+      if (!u) continue;
       const name = (u.Name || "").trim();
       const username = (u.Username || "").trim();
       const firstname = (u.Firstname || "").trim();
-      return (
-        name !== "<Unassigned>" &&
-        username !== "<Unassigned>" &&
-        firstname !== "<Unassigned>"
-      );
-    });
+      const lastname = (u.Lastname || "").trim();
+
+      if (
+        name === "<Unassigned>" ||
+        username === "<Unassigned>" ||
+        firstname === "<Unassigned>"
+      ) {
+        continue;
+      }
+
+      const displayName = (
+        name ||
+        [firstname, lastname].filter(Boolean).join(" ") ||
+        username
+      ).trim();
+
+      if (!displayName) continue;
+
+      const key = displayName.toLowerCase();
+      if (!seenNames.has(key)) {
+        seenNames.add(key);
+        users.push(u);
+      }
+    }
+
     return res.status(200).json({ success: true, users });
   } catch (error) {
     console.error("[RM-Users] Error:", error.response?.data || error.message);

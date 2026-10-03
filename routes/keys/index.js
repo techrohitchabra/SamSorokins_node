@@ -9,15 +9,20 @@ import getByRfid from "./getByRfid";
 import webhook from "./webhook";
 import nonVendorWebhook from "./nonVendorWebhook";
 import keyManagementWebhook from "./keyManagementWebhook";
+import publicVendorCheckout from "./publicVendorCheckout";
+import publicNonVendorCheckout from "./publicNonVendorCheckout";
 import { authOnly } from "../../middlewares/restrict";
 
 const upload = multer();
 const router = Router();
 
-// Public webhook routes
+// Public webhook and checkout routes
 router.post("/webhook", upload.none(), webhook); // for vendor
 router.post("/webhook/non-vendor", upload.none(), nonVendorWebhook); // for non-vendor
 router.post("/webhook/key-management", upload.none(), keyManagementWebhook); // for key management
+router.post("/public-checkout", checkout); // public checkout endpoint without auth
+router.post("/public-checkout/vendor", publicVendorCheckout);
+router.post("/public-checkout/non-vendor", publicNonVendorCheckout);
 
 // Protected routes
 router.get("/", authOnly, getKeysData);
