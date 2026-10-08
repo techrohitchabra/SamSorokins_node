@@ -799,3 +799,12 @@
 2026-10-08T19:07:36.711Z [INFO]  - Server is running on http://localhost:8000
 2026-10-08T19:07:40.740Z [INFO]  - Database connected....
 2026-10-08T19:07:41.094Z [INFO]  - ✅ Default admin already exists
+2026-10-08T19:24:08.664Z [INFO]  - Server is running on http://localhost:8000
+2026-10-08T19:24:12.799Z [INFO]  - Database connected....
+2026-10-08T19:24:13.168Z [INFO]  - ✅ Default admin already exists
+2026-10-08T19:30:00.091Z [INFO]  - [UploadReminder] Cron triggered at: 2026-10-08T19:30:00.091Z
+2026-10-08T19:30:00.095Z [INFO]  - [UploadReminder] Running multi-stage reminder check at 2026-10-08T19:30:00.095Z
+2026-10-08T19:30:00.446Z [INFO]  - [UploadReminder] Stage 1: 0 candidate submissions to evaluate.
+2026-10-08T19:30:22.856Z [INFO]  - [UploadReminder] Stage 2: 1629 candidate submissions to evaluate for multi-stage reminders.
+2026-10-08T19:47:45.060Z [INFO]  - [UploadReminder] Stage 4: 0 fully completed submissions to notify.
+2026-10-08T19:47:45.062Z [INFO]  - [UploadReminder] Multi-stage check complete.

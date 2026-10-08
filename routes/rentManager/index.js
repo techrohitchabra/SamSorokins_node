@@ -12,6 +12,7 @@ import {
 } from "../../utils/rentManager";
 import updateSystemField from "./updateSystemField.js";
 import updateUnitField from "./updateUnitField.js";
+import updatePropertyField from "./updatePropertyField.js";
 // import test from "./test";
 
 const router = Router();
@@ -179,20 +180,28 @@ router.post("/webhook-udf", upload.none(), async (req, res) => {
     }
 
     const unitIdFromFormValues = getAnswerByName(answers, "UnitID");
+    const propertyIdFromFormValues = getAnswerByName(answers, "PropertyID");
 
     // Check table types in configs
-    const hasNonUnitFields = configs.some(
-      (cfg) => (cfg?.tableName?.toLowerCase()?.trim() || "") !== "unit"
-    );
     const hasUnitFields = configs.some(
       (cfg) => (cfg?.tableName?.toLowerCase()?.trim() || "") === "unit"
     );
+    const hasPropertyFields = configs.some(
+      (cfg) => (cfg?.tableName?.toLowerCase()?.trim() || "") === "property"
+    );
+    const hasOtherFields = configs.some((cfg) => {
+      const tName = cfg?.tableName?.toLowerCase()?.trim() || "";
+      return tName !== "unit" && tName !== "property";
+    });
 
-    console.log({ hasNonUnitFields }, { hasUnitFields });
-    // Tenant search is required if there are non-unit fields (e.g. tenant table / system field),
-    // OR if there are unit fields but UnitID was NOT provided in the form answers.
+    console.log({ hasOtherFields }, { hasUnitFields }, { hasPropertyFields });
+    // Tenant search is required if there are tenant/other fields,
+    // OR if there are unit fields but UnitID was NOT provided in the form answers,
+    // OR if there are property fields but PropertyID was NOT provided in the form answers.
     const needsTenantSearch =
-      hasNonUnitFields || (hasUnitFields && !unitIdFromFormValues);
+      hasOtherFields ||
+      (hasUnitFields && !unitIdFromFormValues) ||
+      (hasPropertyFields && !propertyIdFromFormValues);
 
     let tenants = [];
     let matchedEmail = null;
@@ -398,6 +407,66 @@ router.post("/webhook-udf", upload.none(), async (req, res) => {
           if (result.status === "success") {
             console.log(
               `[Success] Unit field updated: ${cfg.field}, UnitID: ${unitIdToUse}, SubmissionID: ${submissionID}, FormID: ${formId}`
+            );
+          }
+          continue;
+        }
+
+        // Update Property field ---------------------------------------------------
+        if (tableName === "property") {
+          let propertyIdToUse = propertyIdFromFormValues;
+
+          // Fallback: If no PropertyID in form values, get propertyID from tenant lease/tenant
+          if (!propertyIdToUse && tenants.length > 0) {
+            propertyIdToUse =
+              tenants[0]?.Leases?.find((l) => l.IsPrimaryLease)?.PropertyID ||
+              tenants[0]?.Leases?.[0]?.PropertyID ||
+              tenants[0]?.PropertyID;
+          }
+
+          if (!propertyIdToUse) {
+            const errorMsg = `Property ID not found for update (form PropertyID: "${
+              propertyIdFromFormValues || ""
+            }", tenantId: "${tenantId || ""}")`;
+            logRMAction({
+              type: "WEBHOOK_PROPERTY_UDF_FAILURE",
+              email: email || "N/A",
+              formId,
+              submissionID,
+              error: errorMsg,
+            });
+            console.error("[Webhook-UDF] Error:", errorMsg);
+            results.push({
+              field: cfg.field,
+              status: "error",
+              error: errorMsg,
+            });
+            continue;
+          }
+
+          const result = await updatePropertyField({
+            cfg,
+            answers,
+            propertyId: propertyIdToUse,
+            headers,
+            action,
+            valueToUse,
+            itemType,
+            pdfLink,
+            udfId,
+            belongsTo,
+            email: email || "Email is not required to update the Property field",
+            submissionID,
+            fieldType,
+          });
+
+          results.push({
+            field: cfg.field,
+            ...result,
+          });
+          if (result.status === "success") {
+            console.log(
+              `[Success] Property field updated: ${cfg.field}, PropertyID: ${propertyIdToUse}, SubmissionID: ${submissionID}, FormID: ${formId}`
             );
           }
           continue;
