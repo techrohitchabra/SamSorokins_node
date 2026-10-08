@@ -143,17 +143,17 @@ router.post("/webhook-udf", upload.none(), async (req, res) => {
     { emailsToSearch }
   );
 
-  if (emailsToSearch.length === 0 || !formId) {
-    console.log("email or formId not received for:", submissionID);
+  if (!formId) {
+    console.log("formId not received for:", submissionID);
     logRMAction({
       type: "WEBHOOK_CONFIG_NOT_FOUND",
       email,
       formId,
       submissionID,
-      error: `email and formId are required ${formId}`,
+      error: "formId is required",
     });
 
-    return res.status(400).json({ error: "email and formId are required" });
+    return res.status(400).json({ error: "formId is required" });
   }
 
   console.log(
@@ -165,7 +165,7 @@ router.post("/webhook-udf", upload.none(), async (req, res) => {
   try {
     const headers = await getRMHeaders();
     const configs = await getMatchingRows(formId);
-    if (configs?.length === 0) {
+    if (!configs || configs.length === 0) {
       logRMAction({
         type: "WEBHOOK_CONFIG_NOT_FOUND",
         email,
@@ -178,97 +178,120 @@ router.post("/webhook-udf", upload.none(), async (req, res) => {
         .json({ error: `No active config for form ${formId}` });
     }
 
-    // let answers = {};
-    // if (submissionID) {
-    //   try {
-    //     const submission = await getJotformSubmission(submissionID);
-    //     answers = submission.answers;
-    //   } catch (e) {
-    //     console.warn(
-    //       `[Webhook-UDF] Could not fetch submission ${submissionID}: ${e.message}`
-    //     );
-    //   }
-    // }
+    const unitIdFromFormValues = getAnswerByName(answers, "UnitID");
+
+    // Check table types in configs
+    const hasNonUnitFields = configs.some(
+      (cfg) => (cfg?.tableName?.toLowerCase()?.trim() || "") !== "unit"
+    );
+    const hasUnitFields = configs.some(
+      (cfg) => (cfg?.tableName?.toLowerCase()?.trim() || "") === "unit"
+    );
+
+    console.log({ hasNonUnitFields }, { hasUnitFields });
+    // Tenant search is required if there are non-unit fields (e.g. tenant table / system field),
+    // OR if there are unit fields but UnitID was NOT provided in the form answers.
+    const needsTenantSearch =
+      hasNonUnitFields || (hasUnitFields && !unitIdFromFormValues);
 
     let tenants = [];
     let matchedEmail = null;
+    let tenantId = null;
 
-    for (const currentEmail of emailsToSearch) {
-      console.log(
-        `[Webhook-UDF] Searching tenant with email: ${currentEmail}`,
-        { submissionID }
-      );
-      try {
-        const searchRes = await axios.get(
-          `${process.env.RM_BASE_URL}/Tenants/Search`,
-          {
-            headers,
-            params: {
-              filterExpression: `Contacts.Email,eq,${currentEmail}`,
-              embeds: "Leases",
-              pageSize: 5,
-            },
-          }
-        );
+    if (needsTenantSearch) {
+      if (emailsToSearch.length === 0) {
+        console.log("email not received for tenant search for:", submissionID);
+        logRMAction({
+          type: "WEBHOOK_TENANT_NOT_FOUND",
+          email,
+          formId,
+          submissionID,
+          error: "email is required for tenant lookup",
+        });
 
-        const resTenants = searchRes?.data;
-        if (Array.isArray(resTenants) && resTenants.length > 0) {
-          tenants = resTenants;
-          matchedEmail = currentEmail;
-          console.log(
-            `[Webhook-UDF] Tenant found with email ${currentEmail}:`,
-            { tenants }
-          );
-          break;
-        }
-      } catch (err) {
-        console.warn(
-          `[Webhook-UDF] Error searching tenant with email ${currentEmail}: ${err.message}`
-        );
+        return res
+          .status(400)
+          .json({ error: "email is required for tenant lookup" });
       }
+
+      // search tenant with email---------------------------------------------------
+      for (const currentEmail of emailsToSearch) {
+        console.log(
+          `[Webhook-UDF] Searching tenant with email: ${currentEmail}`,
+          { submissionID }
+        );
+        try {
+          const searchRes = await axios.get(
+            `${process.env.RM_BASE_URL}/Tenants/Search`,
+            {
+              headers,
+              params: {
+                filterExpression: `Contacts.Email,eq,${currentEmail}`,
+                embeds: "Leases",
+                pageSize: 5,
+              },
+            }
+          );
+
+          const resTenants = searchRes?.data;
+          if (Array.isArray(resTenants) && resTenants.length > 0) {
+            tenants = resTenants;
+            matchedEmail = currentEmail;
+            console.log(
+              `[Webhook-UDF] Tenant found with email ${currentEmail}:`,
+              { tenants }
+            );
+            break;
+          }
+        } catch (err) {
+          console.warn(
+            `[Webhook-UDF] Error searching tenant with email ${currentEmail}: ${err.message}`
+          );
+        }
+      }
+
+      email = matchedEmail || emailsToSearch[0];
+
+      if (!Array.isArray(tenants) || tenants.length === 0) {
+        const attemptedEmailsStr = emailsToSearch.join(", ");
+        console.error(
+          "tenant not found in rent manager with all emails",
+          attemptedEmailsStr
+        );
+
+        logRMAction({
+          type: "WEBHOOK_TENANT_NOT_FOUND",
+          email: attemptedEmailsStr,
+          formId,
+          submissionID,
+          error: `tenant not found in rent manager with all emails: ${attemptedEmailsStr}`,
+        });
+        return res.status(404).json({
+          error: `tenant not found in rent manager with all emails: ${attemptedEmailsStr}`,
+        });
+      }
+
+      if (Array.isArray(tenants) && tenants.length > 1) {
+        console.error("getting multiple tenants with this email", email);
+
+        logRMAction({
+          type: "WEBHOOK_MULTIPLE_TENANTS_FOUND",
+          email,
+          formId,
+          submissionID,
+          error: "Getting multiple tenants with this email",
+          tenantCount: tenants.length,
+          tenantIds: tenants.map((t) => t.TenantID),
+        });
+
+        return res.status(400).json({
+          success: false,
+          error: "Getting multiple tenants with this email",
+        });
+      }
+
+      tenantId = tenants[0]?.TenantID;
     }
-
-    email = matchedEmail || emailsToSearch[0];
-
-    if (!Array.isArray(tenants) || tenants.length === 0) {
-      const attemptedEmailsStr = emailsToSearch.join(", ");
-      console.error(
-        "tenant not found in rent manager with all emails",
-        attemptedEmailsStr
-      );
-
-      logRMAction({
-        type: "WEBHOOK_TENANT_NOT_FOUND",
-        email: attemptedEmailsStr,
-        formId,
-        submissionID,
-        error: `tenant not found in rent manager with all emails: ${attemptedEmailsStr}`,
-      });
-      return res.status(404).json({
-        error: `tenant not found in rent manager with all emails: ${attemptedEmailsStr}`,
-      });
-    }
-
-    if (Array.isArray(tenants) && tenants?.length > 1) {
-      console.error("getting multiple tenants with this email", email);
-
-      logRMAction({
-        type: "WEBHOOK_MULTIPLE_TENANTS_FOUND",
-        email,
-        formId,
-        submissionID,
-        error: "Getting multiple tenants with this email",
-        tenantCount: tenants?.length,
-        tenantIds: tenants?.map((t) => t.TenantID),
-      });
-
-      return res.status(400).json({
-        success: false,
-        error: "Getting multiple tenants with this email",
-      });
-    }
-
-    const tenantId = tenants[0]?.TenantID;
 
     const results = [];
     for (const cfg of configs) {
@@ -294,7 +317,7 @@ router.post("/webhook-udf", upload.none(), async (req, res) => {
         ) {
           logRMAction({
             type: "WEBHOOK_UDF_FIELD_NOT_FOUND",
-            email,
+            email: email || "N/A",
             formId,
             field: cfg.field,
             error: `UDF field "${cfg.field}" not found in Rent Manager`,
@@ -315,20 +338,29 @@ router.post("/webhook-udf", upload.none(), async (req, res) => {
         const itemType = cfg?.itemType?.toLowerCase()?.trim() || ""; // item type from sheet (e.g. "PDF")
 
         const tableName = cfg?.tableName?.toLowerCase()?.trim() || ""; // table name in Rent Manager
+        const fieldType = cfg?.fieldType?.toLowerCase()?.trim() || ""; // table name in Rent Manager
 
         const pdfLink = `https://premiumpd.jotform.com/API/generatePDF?formid=${formId}&submissionid=${submissionID}&download=1&reportid=${reportID}&apiKey=${apiKey}`;
         console.log("PDF Link for submission:", { submissionID }, { pdfLink });
 
+        // Update Unit field ---------------------------------------------------
         if (tableName === "unit") {
-          const unitId =
-            getAnswerByName(answers, "UnitID") ||
-            tenants[0]?.Leases?.find((l) => l.IsPrimaryLease)?.UnitID ||
-            tenants[0]?.Leases?.[0]?.UnitID;
-          if (!unitId) {
-            const errorMsg = `Unit ID not found for tenant: ${tenantId}`;
+          let unitIdToUse = unitIdFromFormValues;
+
+          // Situation 2: If no UnitID in form values, get unitID from tenant
+          if (!unitIdToUse) {
+            unitIdToUse =
+              tenants[0]?.Leases?.find((l) => l.IsPrimaryLease)?.UnitID ||
+              tenants[0]?.Leases?.[0]?.UnitID;
+          }
+
+          if (!unitIdToUse) {
+            const errorMsg = `Unit ID not found for update (form UnitID: "${
+              unitIdFromFormValues || ""
+            }", tenantId: "${tenantId || ""}")`;
             logRMAction({
               type: "WEBHOOK_UNIT_UDF_FAILURE",
-              email,
+              email: email || "N/A",
               formId,
               submissionID,
               error: errorMsg,
@@ -345,7 +377,7 @@ router.post("/webhook-udf", upload.none(), async (req, res) => {
           const result = await updateUnitField({
             cfg,
             answers,
-            unitId,
+            unitId: unitIdToUse,
             headers,
             action,
             valueToUse,
@@ -353,7 +385,7 @@ router.post("/webhook-udf", upload.none(), async (req, res) => {
             pdfLink,
             udfId,
             belongsTo,
-            email,
+            email: email || "Email is not required to update the Unit field",
             submissionID,
           });
 
@@ -363,11 +395,12 @@ router.post("/webhook-udf", upload.none(), async (req, res) => {
           });
           if (result.status === "success") {
             console.log(
-              `[Success] Field updated: ${cfg.field}, Email: ${email}, SubmissionID: ${submissionID}, FormID: ${formId}`
+              `[Success] Unit field updated: ${cfg.field}, UnitID: ${unitIdToUse}, SubmissionID: ${submissionID}, FormID: ${formId}`
             );
           }
           continue;
         }
+
         if (tableName !== "tenant") {
           // return error if table name is not tenant, since that's the only one we support in this webhook for now
           const errorMsg = `Unsupported table name: ${tableName} for ${cfg.field}. Only "tenant" is supported in this webhook.`;
