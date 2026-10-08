@@ -652,3 +652,150 @@
 2026-10-05T07:25:30.593Z [INFO]  - Server is running on http://localhost:8000
 2026-10-05T07:25:34.525Z [INFO]  - Database connected....
 2026-10-05T07:25:34.856Z [INFO]  - ✅ Default admin already exists
+2026-10-08T13:25:46.857Z [INFO]  - Server is running on http://localhost:8000
+2026-10-08T13:25:51.497Z [INFO]  - Database connected....
+2026-10-08T13:25:51.860Z [INFO]  - ✅ Default admin already exists
+2026-10-08T13:29:28.944Z [INFO]  - Server is running on http://localhost:8000
+2026-10-08T13:29:33.123Z [INFO]  - Database connected....
+2026-10-08T13:29:33.479Z [INFO]  - ✅ Default admin already exists
+2026-10-08T13:29:56.310Z [INFO]  - Server is running on http://localhost:8000
+2026-10-08T13:30:00.083Z [INFO]  - [UploadReminder] Cron triggered at: 2026-10-08T13:30:00.083Z
+2026-10-08T13:30:00.105Z [INFO]  - [UploadReminder] Running multi-stage reminder check at 2026-10-08T13:30:00.104Z
+2026-10-08T13:30:05.355Z [INFO]  - Database connected....
+2026-10-08T13:30:05.731Z [INFO]  - ✅ Default admin already exists
+2026-10-08T13:30:07.962Z [INFO]  - [UploadReminder] Stage 1: 0 candidate submissions to evaluate.
+2026-10-08T13:30:33.498Z [INFO]  - [UploadReminder] Stage 2: 1629 candidate submissions to evaluate for multi-stage reminders.
+2026-10-08T13:36:52.362Z [INFO]  - Server is running on http://localhost:8000
+2026-10-08T13:36:56.738Z [INFO]  - Database connected....
+2026-10-08T13:36:57.656Z [INFO]  - ✅ Default admin already exists
+2026-10-08T13:37:37.327Z [INFO]  - Server is running on http://localhost:8000
+2026-10-08T13:37:41.205Z [INFO]  - Database connected....
+2026-10-08T13:37:41.586Z [INFO]  - ✅ Default admin already exists
+2026-10-08T13:41:40.526Z [INFO]  - Server is running on http://localhost:8000
+2026-10-08T13:41:44.918Z [INFO]  - Database connected....
+2026-10-08T13:41:45.291Z [INFO]  - ✅ Default admin already exists
+2026-10-08T13:46:14.527Z [INFO]  - Server is running on http://localhost:8000
+2026-10-08T13:46:18.669Z [INFO]  - Database connected....
+2026-10-08T13:46:19.035Z [INFO]  - ✅ Default admin already exists
+2026-10-08T13:55:07.207Z [INFO]  - Server is running on http://localhost:8000
+2026-10-08T13:55:15.547Z [INFO]  - Database connected....
+2026-10-08T13:55:15.911Z [INFO]  - ✅ Default admin already exists
+2026-10-08T13:55:59.167Z [INFO]  - Server is running on http://localhost:8000
+2026-10-08T13:56:03.117Z [INFO]  - Database connected....
+2026-10-08T13:56:03.490Z [INFO]  - ✅ Default admin already exists
+2026-10-08T13:57:59.733Z [INFO]  - Server is running on http://localhost:8000
+2026-10-08T13:58:04.238Z [INFO]  - Database connected....
+2026-10-08T13:58:04.598Z [INFO]  - ✅ Default admin already exists
+2026-10-08T13:58:35.086Z [INFO]  - Server is running on http://localhost:8000
+2026-10-08T13:58:39.030Z [INFO]  - Database connected....
+2026-10-08T13:58:39.401Z [INFO]  - ✅ Default admin already exists
+2026-10-08T14:00:00.081Z [INFO]  - [UploadCleanup] Running 72-hour cleanup job at 2026-10-08T14:00:00.081Z
+2026-10-08T14:00:00.089Z [INFO]  - [UploadReminder] Cron triggered at: 2026-10-08T14:00:00.089Z
+2026-10-08T14:00:00.091Z [INFO]  - [UploadReminder] Running multi-stage reminder check at 2026-10-08T14:00:00.091Z
+2026-10-08T14:00:00.100Z [INFO]  - [AutoMarkSubmitted] Running auto-mark submitted check at 2026-10-08T14:00:00.100Z
+2026-10-08T14:00:00.096Z [INFO]  - [DailyUploadReport] Running daily report generation at 2026-10-08T14:00:00.096Z
+2026-10-08T14:00:00.465Z [INFO]  - [DailyUploadReport] No submissions to report today.
+2026-10-08T14:00:00.470Z [INFO]  - [UploadReminder] Stage 1: 0 candidate submissions to evaluate.
+2026-10-08T14:00:00.533Z [INFO]  - [UploadCleanup] No expired uploads found.
+2026-10-08T14:00:01.270Z [INFO]  - [AutoMarkSubmitted] No uploads older than 1 hour found for unsubmitted submissions.
+2026-10-08T14:00:25.816Z [INFO]  - [UploadReminder] Stage 2: 1629 candidate submissions to evaluate for multi-stage reminders.
+2026-10-08T14:18:26.430Z [INFO]  - [UploadReminder] Multi-stage check complete.
+2026-10-08T14:18:26.429Z [INFO]  - [UploadReminder] Stage 4: 0 fully completed submissions to notify.
+2026-10-08T14:30:00.040Z [INFO]  - [UploadReminder] Cron triggered at: 2026-10-08T14:30:00.040Z
+2026-10-08T14:30:00.042Z [INFO]  - [UploadReminder] Running multi-stage reminder check at 2026-10-08T14:30:00.042Z
+2026-10-08T14:30:00.471Z [INFO]  - [UploadReminder] Stage 1: 0 candidate submissions to evaluate.
+2026-10-08T14:30:33.666Z [INFO]  - [UploadReminder] Stage 2: 1629 candidate submissions to evaluate for multi-stage reminders.
+2026-10-08T14:48:37.690Z [INFO]  - [UploadReminder] Stage 4: 0 fully completed submissions to notify.
+2026-10-08T14:48:37.690Z [INFO]  - [UploadReminder] Multi-stage check complete.
+2026-10-08T15:00:00.076Z [INFO]  - [WebhookErrorReport] Running daily report generation at 2026-10-08T15:00:00.076Z
+2026-10-08T15:00:00.085Z [INFO]  - [UploadCleanup] Running 72-hour cleanup job at 2026-10-08T15:00:00.085Z
+2026-10-08T15:00:00.091Z [INFO]  - [AutoMarkSubmitted] Running auto-mark submitted check at 2026-10-08T15:00:00.091Z
+2026-10-08T15:00:00.106Z [INFO]  - [UploadReminder] Cron triggered at: 2026-10-08T15:00:00.106Z
+2026-10-08T15:00:00.110Z [INFO]  - [UploadReminder] Running multi-stage reminder check at 2026-10-08T15:00:00.110Z
+2026-10-08T15:00:00.409Z [INFO]  - [WebhookErrorReport] No error logs to report today.
+2026-10-08T15:00:00.503Z [INFO]  - [UploadCleanup] No expired uploads found.
+2026-10-08T15:00:00.579Z [INFO]  - [UploadReminder] Stage 1: 0 candidate submissions to evaluate.
+2026-10-08T15:00:01.372Z [INFO]  - [AutoMarkSubmitted] No uploads older than 1 hour found for unsubmitted submissions.
+2026-10-08T15:00:55.660Z [INFO]  - [UploadReminder] Stage 2: 1629 candidate submissions to evaluate for multi-stage reminders.
+2026-10-08T15:18:39.454Z [INFO]  - [UploadReminder] Stage 4: 0 fully completed submissions to notify.
+2026-10-08T15:18:39.454Z [INFO]  - [UploadReminder] Multi-stage check complete.
+2026-10-08T15:30:00.029Z [INFO]  - [UploadReminder] Cron triggered at: 2026-10-08T15:30:00.029Z
+2026-10-08T15:30:00.030Z [INFO]  - [UploadReminder] Running multi-stage reminder check at 2026-10-08T15:30:00.030Z
+2026-10-08T16:00:00.071Z [INFO]  - [UploadReminder] Cron triggered at: 2026-10-08T16:00:00.071Z
+2026-10-08T16:00:00.072Z [INFO]  - [UploadReminder] Running multi-stage reminder check at 2026-10-08T16:00:00.072Z
+2026-10-08T16:00:00.076Z [INFO]  - [UploadCleanup] Running 72-hour cleanup job at 2026-10-08T16:00:00.076Z
+2026-10-08T16:00:00.083Z [INFO]  - [AutoMarkSubmitted] Running auto-mark submitted check at 2026-10-08T16:00:00.083Z
+2026-10-08T16:00:02.909Z [INFO]  - [UploadReminder] Stage 1: 0 candidate submissions to evaluate.
+2026-10-08T16:00:02.934Z [INFO]  - [UploadCleanup] No expired uploads found.
+2026-10-08T16:00:06.286Z [INFO]  - [AutoMarkSubmitted] No uploads older than 1 hour found for unsubmitted submissions.
+2026-10-08T16:01:03.473Z [INFO]  - [UploadReminder] Stage 2: 1629 candidate submissions to evaluate for multi-stage reminders.
+2026-10-08T16:19:49.676Z [INFO]  - [UploadReminder] Stage 4: 0 fully completed submissions to notify.
+2026-10-08T16:19:49.678Z [INFO]  - [UploadReminder] Multi-stage check complete.
+2026-10-08T16:30:00.052Z [INFO]  - [UploadReminder] Cron triggered at: 2026-10-08T16:30:00.052Z
+2026-10-08T16:30:00.053Z [INFO]  - [UploadReminder] Running multi-stage reminder check at 2026-10-08T16:30:00.053Z
+2026-10-08T16:30:00.455Z [INFO]  - [UploadReminder] Stage 1: 0 candidate submissions to evaluate.
+2026-10-08T16:30:34.266Z [INFO]  - [UploadReminder] Stage 2: 1629 candidate submissions to evaluate for multi-stage reminders.
+2026-10-08T16:49:38.359Z [INFO]  - [UploadReminder] Multi-stage check complete.
+2026-10-08T16:49:38.359Z [INFO]  - [UploadReminder] Stage 4: 0 fully completed submissions to notify.
+2026-10-08T17:00:00.050Z [INFO]  - [UploadCleanup] Running 72-hour cleanup job at 2026-10-08T17:00:00.050Z
+2026-10-08T17:00:00.056Z [INFO]  - [AutoMarkSubmitted] Running auto-mark submitted check at 2026-10-08T17:00:00.056Z
+2026-10-08T17:00:00.061Z [INFO]  - [UploadReminder] Cron triggered at: 2026-10-08T17:00:00.061Z
+2026-10-08T17:00:00.062Z [INFO]  - [UploadReminder] Running multi-stage reminder check at 2026-10-08T17:00:00.062Z
+2026-10-08T17:00:00.430Z [INFO]  - [UploadReminder] Stage 1: 0 candidate submissions to evaluate.
+2026-10-08T17:00:00.433Z [INFO]  - [UploadCleanup] No expired uploads found.
+2026-10-08T17:00:01.165Z [INFO]  - [AutoMarkSubmitted] No uploads older than 1 hour found for unsubmitted submissions.
+2026-10-08T17:00:26.447Z [INFO]  - [UploadReminder] Stage 2: 1629 candidate submissions to evaluate for multi-stage reminders.
+2026-10-08T17:18:19.438Z [INFO]  - [UploadReminder] Stage 4: 0 fully completed submissions to notify.
+2026-10-08T17:18:19.439Z [INFO]  - [UploadReminder] Multi-stage check complete.
+2026-10-08T17:30:00.042Z [INFO]  - [UploadReminder] Cron triggered at: 2026-10-08T17:30:00.041Z
+2026-10-08T17:30:00.043Z [INFO]  - [UploadReminder] Running multi-stage reminder check at 2026-10-08T17:30:00.043Z
+2026-10-08T17:30:00.405Z [INFO]  - [UploadReminder] Stage 1: 0 candidate submissions to evaluate.
+2026-10-08T17:30:23.951Z [INFO]  - [UploadReminder] Stage 2: 1629 candidate submissions to evaluate for multi-stage reminders.
+2026-10-08T17:48:05.253Z [INFO]  - [UploadReminder] Stage 4: 0 fully completed submissions to notify.
+2026-10-08T17:48:05.254Z [INFO]  - [UploadReminder] Multi-stage check complete.
+2026-10-08T18:00:00.059Z [INFO]  - [UploadReminder] Cron triggered at: 2026-10-08T18:00:00.059Z
+2026-10-08T18:00:00.060Z [INFO]  - [UploadReminder] Running multi-stage reminder check at 2026-10-08T18:00:00.060Z
+2026-10-08T18:00:00.056Z [INFO]  - [UploadCleanup] Running 72-hour cleanup job at 2026-10-08T18:00:00.055Z
+2026-10-08T18:00:00.064Z [INFO]  - [AutoMarkSubmitted] Running auto-mark submitted check at 2026-10-08T18:00:00.064Z
+2026-10-08T18:00:00.462Z [INFO]  - [UploadReminder] Stage 1: 0 candidate submissions to evaluate.
+2026-10-08T18:00:00.464Z [INFO]  - [UploadCleanup] No expired uploads found.
+2026-10-08T18:00:01.125Z [INFO]  - [AutoMarkSubmitted] No uploads older than 1 hour found for unsubmitted submissions.
+2026-10-08T18:00:24.942Z [INFO]  - [UploadReminder] Stage 2: 1629 candidate submissions to evaluate for multi-stage reminders.
+2026-10-08T18:05:50.201Z [INFO]  - Server is running on http://localhost:8000
+2026-10-08T18:05:54.363Z [INFO]  - Database connected....
+2026-10-08T18:05:54.724Z [INFO]  - ✅ Default admin already exists
+2026-10-08T18:06:43.782Z [INFO]  - Server is running on http://localhost:8000
+2026-10-08T18:06:47.767Z [INFO]  - Database connected....
+2026-10-08T18:06:48.134Z [INFO]  - ✅ Default admin already exists
+2026-10-08T18:08:49.498Z [INFO]  - Server is running on http://localhost:8000
+2026-10-08T18:08:54.332Z [INFO]  - Database connected....
+2026-10-08T18:08:54.714Z [INFO]  - ✅ Default admin already exists
+2026-10-08T18:09:21.939Z [INFO]  - Server is running on http://localhost:8000
+2026-10-08T18:09:25.736Z [INFO]  - Database connected....
+2026-10-08T18:09:26.103Z [INFO]  - ✅ Default admin already exists
+2026-10-08T18:30:00.047Z [INFO]  - [UploadReminder] Running multi-stage reminder check at 2026-10-08T18:30:00.047Z
+2026-10-08T18:30:00.044Z [INFO]  - [UploadReminder] Cron triggered at: 2026-10-08T18:30:00.044Z
+2026-10-08T18:30:00.393Z [INFO]  - [UploadReminder] Stage 1: 0 candidate submissions to evaluate.
+2026-10-08T18:30:24.698Z [INFO]  - [UploadReminder] Stage 2: 1629 candidate submissions to evaluate for multi-stage reminders.
+2026-10-08T18:47:28.874Z [INFO]  - [UploadReminder] Multi-stage check complete.
+2026-10-08T18:47:28.873Z [INFO]  - [UploadReminder] Stage 4: 0 fully completed submissions to notify.
+2026-10-08T18:50:48.917Z [INFO]  - Server is running on http://localhost:8000
+2026-10-08T18:50:52.868Z [INFO]  - Database connected....
+2026-10-08T18:50:53.235Z [INFO]  - ✅ Default admin already exists
+2026-10-08T19:00:00.059Z [INFO]  - [UploadReminder] Cron triggered at: 2026-10-08T19:00:00.059Z
+2026-10-08T19:00:00.062Z [INFO]  - [UploadReminder] Running multi-stage reminder check at 2026-10-08T19:00:00.062Z
+2026-10-08T19:00:00.082Z [INFO]  - [AutoMarkSubmitted] Running auto-mark submitted check at 2026-10-08T19:00:00.082Z
+2026-10-08T19:00:00.074Z [INFO]  - [UploadCleanup] Running 72-hour cleanup job at 2026-10-08T19:00:00.074Z
+2026-10-08T19:00:00.443Z [INFO]  - [UploadReminder] Stage 1: 0 candidate submissions to evaluate.
+2026-10-08T19:00:00.534Z [INFO]  - [UploadCleanup] No expired uploads found.
+2026-10-08T19:00:01.169Z [INFO]  - [AutoMarkSubmitted] No uploads older than 1 hour found for unsubmitted submissions.
+2026-10-08T19:00:23.467Z [INFO]  - [UploadReminder] Stage 2: 1629 candidate submissions to evaluate for multi-stage reminders.
+2026-10-08T19:04:45.183Z [INFO]  - Server is running on http://localhost:8000
+2026-10-08T19:04:49.222Z [INFO]  - Database connected....
+2026-10-08T19:04:49.609Z [INFO]  - ✅ Default admin already exists
+2026-10-08T19:06:17.100Z [INFO]  - Server is running on http://localhost:8000
+2026-10-08T19:06:20.911Z [INFO]  - Database connected....
+2026-10-08T19:06:21.262Z [INFO]  - ✅ Default admin already exists
+2026-10-08T19:07:36.711Z [INFO]  - Server is running on http://localhost:8000
+2026-10-08T19:07:40.740Z [INFO]  - Database connected....
+2026-10-08T19:07:41.094Z [INFO]  - ✅ Default admin already exists

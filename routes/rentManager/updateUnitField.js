@@ -77,6 +77,7 @@ export default async function updateUnitField({
   belongsTo,
   email,
   submissionID,
+  fieldType, //if want to update Multi Select field
 }) {
   try {
     if (belongsTo !== "udf") {
@@ -137,7 +138,27 @@ export default async function updateUnitField({
 
       if (itemType === "jotform") {
         const jotformValue = getAnswerByName(answers, valueToUse);
-        finalValue = jotformValue || "";
+        const normalizedFieldType = (fieldType || "").toLowerCase().trim();
+        const isMultiSelect =
+          normalizedFieldType === "multi select" ||
+          normalizedFieldType === "multiselect" ||
+          normalizedFieldType === "multi-select";
+
+        if (Array.isArray(jotformValue)) {
+          finalValue = jotformValue
+            .map((v) => String(v).trim())
+            .filter(Boolean)
+            .join(",");
+        } else if (isMultiSelect && typeof jotformValue === "string") {
+          // in case a multi-select field ever sends a comma-separated string instead of a JS array
+          finalValue = jotformValue
+            .split(",")
+            .map((v) => v.trim())
+            .filter(Boolean)
+            .join(",");
+        } else {
+          finalValue = jotformValue || "";
+        }
       }
     } else if (action === "prepend") {
       const detailRes = await axios.get(
@@ -160,7 +181,29 @@ export default async function updateUnitField({
 
       if (itemType === "jotform") {
         const jotformValue = getAnswerByName(answers, valueToUse);
-        finalValue = jotformValue + currentValue;
+        const normalizedFieldType = (fieldType || "").toLowerCase().trim();
+        const isMultiSelect =
+          normalizedFieldType === "multi select" ||
+          normalizedFieldType === "multiselect" ||
+          normalizedFieldType === "multi-select";
+        let valStr = "";
+
+        if (Array.isArray(jotformValue)) {
+          valStr = jotformValue
+            .map((v) => String(v).trim())
+            .filter(Boolean)
+            .join(",");
+        } else if (isMultiSelect && typeof jotformValue === "string") {
+          // in case a multi-select field ever sends a comma-separated string instead of a JS array
+          valStr = jotformValue
+            .split(",")
+            .map((v) => v.trim())
+            .filter(Boolean)
+            .join(",");
+        } else {
+          valStr = jotformValue || "";
+        }
+        finalValue = valStr + currentValue;
       }
     } else if (action === "empty") {
       finalValue = "";
@@ -178,6 +221,10 @@ export default async function updateUnitField({
         reason: errorMsg,
       };
     }
+
+    console.log("field to be update: ", "cfg.field: ", cfg?.field, {
+      finalValue,
+    });
 
     await axios.post(
       `${process.env.RM_BASE_URL}/Units/UserDefinedValues`,

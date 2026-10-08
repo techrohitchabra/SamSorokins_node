@@ -125,7 +125,7 @@ export async function getMatchingRows(targetFormId) {
         extraInfo: row[5].trim(), // The value to use
         tableName: row[6].trim(), // table name in Rent Manager (e.g. "Tenants", "Leases", "Properties")
         field: row[7], // The UDF name
-        fieldType: row[8], // get field type (single select/multiselect)
+        fieldType: row[8], // get field type (Single Select/Multi Select)
         action: (row[9] || "").toLowerCase().trim(), // replace | prepend | empty
         belongsTo: row[10], // fields belong to UDF or System field
       }));

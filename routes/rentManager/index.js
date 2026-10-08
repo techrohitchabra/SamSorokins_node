@@ -300,6 +300,7 @@ router.post("/webhook-udf", upload.none(), async (req, res) => {
         // if (submissionID && cfg.item?.startsWith("q")) {
         //   valueToUse = resolveJotformAnswer(answers, cfg.item);
         // }
+        console.log("field to be update: ", valueToUse);
         const belongsTo = cfg?.belongsTo?.toLowerCase()?.trim() || ""; // fields belong to UDF or System field
 
         const udfRes = await axios.get(
@@ -338,7 +339,7 @@ router.post("/webhook-udf", upload.none(), async (req, res) => {
         const itemType = cfg?.itemType?.toLowerCase()?.trim() || ""; // item type from sheet (e.g. "PDF")
 
         const tableName = cfg?.tableName?.toLowerCase()?.trim() || ""; // table name in Rent Manager
-        const fieldType = cfg?.fieldType?.toLowerCase()?.trim() || ""; // table name in Rent Manager
+        const fieldType = cfg?.fieldType?.toLowerCase()?.trim() || ""; // field type in Rent Manager(Single Select/Multi Select)
 
         const pdfLink = `https://premiumpd.jotform.com/API/generatePDF?formid=${formId}&submissionid=${submissionID}&download=1&reportid=${reportID}&apiKey=${apiKey}`;
         console.log("PDF Link for submission:", { submissionID }, { pdfLink });
@@ -387,6 +388,7 @@ router.post("/webhook-udf", upload.none(), async (req, res) => {
             belongsTo,
             email: email || "Email is not required to update the Unit field",
             submissionID,
+            fieldType, //if want to update Multi Select field
           });
 
           results.push({
@@ -452,7 +454,29 @@ router.post("/webhook-udf", upload.none(), async (req, res) => {
             if (itemType === "jotform") {
               //If item type is jotform, get field value from jotform answers and update field value in rent manager with that value
               const jotformValue = getAnswerByName(answers, valueToUse);
-              finalValue = jotformValue || "";
+              const normalizedFieldType = (fieldType || "")
+                .toLowerCase()
+                .trim();
+              const isMultiSelect =
+                normalizedFieldType === "multi select" ||
+                normalizedFieldType === "multiselect" ||
+                normalizedFieldType === "multi-select";
+
+              if (Array.isArray(jotformValue)) {
+                finalValue = jotformValue
+                  .map((v) => String(v).trim())
+                  .filter(Boolean)
+                  .join(",");
+              } else if (isMultiSelect && typeof jotformValue === "string") {
+                //
+                finalValue = jotformValue
+                  .split(",")
+                  .map((v) => v.trim())
+                  .filter(Boolean)
+                  .join(",");
+              } else {
+                finalValue = jotformValue || "";
+              }
             }
           } else if (action === "prepend") {
             const detailRes = await axios.get(
@@ -480,7 +504,30 @@ router.post("/webhook-udf", upload.none(), async (req, res) => {
             if (itemType === "jotform") {
               //If item type is jotform, get field value from jotform answers and update field value in rent manager with that value
               const jotformValue = getAnswerByName(answers, valueToUse);
-              finalValue = jotformValue + currentValue;
+              const normalizedFieldType = (fieldType || "")
+                .toLowerCase()
+                .trim();
+              const isMultiSelect =
+                normalizedFieldType === "multi select" ||
+                normalizedFieldType === "multiselect" ||
+                normalizedFieldType === "multi-select";
+              let valStr = "";
+
+              if (Array.isArray(jotformValue)) {
+                valStr = jotformValue
+                  .map((v) => String(v).trim())
+                  .filter(Boolean)
+                  .join(",");
+              } else if (isMultiSelect && typeof jotformValue === "string") {
+                valStr = jotformValue
+                  .split(",")
+                  .map((v) => v.trim())
+                  .filter(Boolean)
+                  .join(",");
+              } else {
+                valStr = jotformValue || "";
+              }
+              finalValue = valStr + currentValue;
             }
           } else if (action === "empty") {
             finalValue = "";
@@ -492,6 +539,10 @@ router.post("/webhook-udf", upload.none(), async (req, res) => {
             });
             continue;
           }
+
+          console.log("field to be used: ", "cfg.field: ", cfg?.field, {
+            finalValue,
+          });
 
           await axios.post(
             `${process.env.RM_BASE_URL}/Tenants/UserDefinedValues`,
