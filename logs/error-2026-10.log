@@ -593,3 +593,9 @@ It will no longer receive updates or releases.
 Please migrate your code to use AWS SDK for JavaScript (v3).
 For more information, check the blog post at https://a.co/cUPnyil
 (Use `node --trace-warnings ...` to show where the warning was created)
+2026-10-09T19:41:43.277Z [ERROR] - (node:12424) NOTE: The AWS SDK for JavaScript (v2) has reached end-of-support.
+It will no longer receive updates or releases.
+
+Please migrate your code to use AWS SDK for JavaScript (v3).
+For more information, check the blog post at https://a.co/cUPnyil
+(Use `node --trace-warnings ...` to show where the warning was created)
