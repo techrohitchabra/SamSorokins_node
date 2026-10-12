@@ -866,3 +866,6 @@
 2026-10-10T06:00:03.127Z [INFO]  - [UploadCleanup] No expired uploads found.
 2026-10-10T06:00:05.442Z [INFO]  - [AutoMarkSubmitted] No uploads older than 1 hour found for unsubmitted submissions.
 2026-10-10T06:00:31.828Z [INFO]  - [UploadReminder] Stage 2: 1629 candidate submissions to evaluate for multi-stage reminders.
+2026-10-12T17:55:52.850Z [INFO]  - Server is running on http://localhost:8000
+2026-10-12T17:55:56.692Z [INFO]  - Database connected....
+2026-10-12T17:55:57.014Z [INFO]  - ✅ Default admin already exists
