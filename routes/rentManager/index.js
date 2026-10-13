@@ -195,13 +195,43 @@ router.post("/webhook-udf", upload.none(), async (req, res) => {
     });
 
     console.log({ hasOtherFields }, { hasUnitFields }, { hasPropertyFields });
-    // Tenant search is required if there are tenant/other fields,
-    // OR if there are unit fields but UnitID was NOT provided in the form answers,
-    // OR if there are property fields but PropertyID was NOT provided in the form answers.
-    const needsTenantSearch =
-      hasOtherFields ||
-      (hasUnitFields && !unitIdFromFormValues) ||
-      (hasPropertyFields && !propertyIdFromFormValues);
+
+    if (hasUnitFields && !unitIdFromFormValues) {
+      console.error(
+        "[Webhook-UDF] UnitID not received from form values to update Unit fields for:",
+        submissionID
+      );
+      logRMAction({
+        type: "WEBHOOK_UNIT_UDF_FAILURE",
+        email: email || "N/A",
+        formId,
+        submissionID,
+        error: "UnitID is required from form values to update Unit fields",
+      });
+      return res.status(400).json({
+        error: "UnitID is required from form values to update Unit fields",
+      });
+    }
+
+    if (hasPropertyFields && !propertyIdFromFormValues) {
+      console.error(
+        "[Webhook-UDF] PropertyID not received from form values to update Property fields for:",
+        submissionID
+      );
+      logRMAction({
+        type: "WEBHOOK_PROPERTY_UDF_FAILURE",
+        email: email || "N/A",
+        formId,
+        submissionID,
+        error: "PropertyID is required from form values to update Property fields",
+      });
+      return res.status(400).json({
+        error: "PropertyID is required from form values to update Property fields",
+      });
+    }
+
+    // Tenant search is only required if there are tenant/other fields
+    const needsTenantSearch = hasOtherFields;
 
     let tenants = [];
     let matchedEmail = null;
@@ -355,34 +385,7 @@ router.post("/webhook-udf", upload.none(), async (req, res) => {
 
         // Update Unit field ---------------------------------------------------
         if (tableName === "unit") {
-          let unitIdToUse = unitIdFromFormValues;
-
-          // Situation 2: If no UnitID in form values, get unitID from tenant
-          if (!unitIdToUse) {
-            unitIdToUse =
-              tenants[0]?.Leases?.find((l) => l.IsPrimaryLease)?.UnitID ||
-              tenants[0]?.Leases?.[0]?.UnitID;
-          }
-
-          if (!unitIdToUse) {
-            const errorMsg = `Unit ID not found for update (form UnitID: "${
-              unitIdFromFormValues || ""
-            }", tenantId: "${tenantId || ""}")`;
-            logRMAction({
-              type: "WEBHOOK_UNIT_UDF_FAILURE",
-              email: email || "N/A",
-              formId,
-              submissionID,
-              error: errorMsg,
-            });
-            console.error("[Webhook-UDF] Error:", errorMsg);
-            results.push({
-              field: cfg.field,
-              status: "error",
-              error: errorMsg,
-            });
-            continue;
-          }
+          const unitIdToUse = unitIdFromFormValues;
 
           const result = await updateUnitField({
             cfg,
@@ -414,35 +417,7 @@ router.post("/webhook-udf", upload.none(), async (req, res) => {
 
         // Update Property field ---------------------------------------------------
         if (tableName === "property") {
-          let propertyIdToUse = propertyIdFromFormValues;
-
-          // Fallback: If no PropertyID in form values, get propertyID from tenant lease/tenant
-          if (!propertyIdToUse && tenants.length > 0) {
-            propertyIdToUse =
-              tenants[0]?.Leases?.find((l) => l.IsPrimaryLease)?.PropertyID ||
-              tenants[0]?.Leases?.[0]?.PropertyID ||
-              tenants[0]?.PropertyID;
-          }
-
-          if (!propertyIdToUse) {
-            const errorMsg = `Property ID not found for update (form PropertyID: "${
-              propertyIdFromFormValues || ""
-            }", tenantId: "${tenantId || ""}")`;
-            logRMAction({
-              type: "WEBHOOK_PROPERTY_UDF_FAILURE",
-              email: email || "N/A",
-              formId,
-              submissionID,
-              error: errorMsg,
-            });
-            console.error("[Webhook-UDF] Error:", errorMsg);
-            results.push({
-              field: cfg.field,
-              status: "error",
-              error: errorMsg,
-            });
-            continue;
-          }
+          const propertyIdToUse = propertyIdFromFormValues;
 
           const result = await updatePropertyField({
             cfg,
